@@ -485,54 +485,74 @@ table th {
   background-color: transparent;
 }
 
-.client_section .client_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 600px;
-  border: 1px solid #cccccc;
-  padding: 45px 35px 35px 25px;
-  background-color: #ffffff;
-  margin: 0 auto;
+/* Carrusel*/
+.carousel-clientes {
+  body {
+	  align-items: center;
+	  background: #E3E3E3;
+	  display: flex;
+	  height: 100vh;
+	  justify-content: center;
+  }
+
+  @mixin white-gradient {
+	  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  }
+
+  $animationSpeed: 40s;
+
+  /* Animation*/
+  @keyframes scroll {
+	  0% { transform: translateX(0); }
+	  100% { transform: translateX(calc(-250px * 7))}
+  }
+
+
+  /* Styling*/
+  .slider {
+	  background: white;
+	  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	  height: 100px;
+	  margin: auto;
+	  overflow:hidden;
+	  position: relative;
+	  width: 960px;
+	
+	  &::before,
+	  &::after {
+		  @include white-gradient;
+		  content: "";
+		  height: 100px;
+		  position: absolute;
+		  width: 200px;
+		  z-index: 2;
+	  }
+	
+	  &::after {
+		  right: 0;
+		  top: 0;
+		  transform: rotateZ(180deg);
+	  }
+
+	  &::before {
+		  left: 0;
+		  top: 0;
+	  }
+	
+	  .slide-track {
+		  animation: scroll $animationSpeed linear infinite;
+		  display: flex;
+		  width: calc(250px * 14);
+	  }
+	
+	  .slide {
+		  height: 100px;
+		  width: 250px;
+	  }
+  }
 }
 
-.client_section .client_container .detail-box p {
-  text-align: center;
-}
 
-.client_section .client_container .client_id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.client_section .client_container .client_id .img-box {
-  width: 75px;
-  margin-right: 10px;
-}
-
-.client_section .client_container .client_id .img-box img {
-  width: 100%;
-}
-
-.client_section .client_container .client_id .name h5 {
-  text-transform: uppercase;
-}
-
-.client_section .client_container .client_id .name h6 {
-  color: #ff4f5a;
-}
 
 .info_section {
   background-color: #01436D;
