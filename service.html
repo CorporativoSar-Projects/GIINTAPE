@@ -35,10 +35,13 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
 
   <!--Icon-Font-->
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -255,7 +258,7 @@
         <br>
       </div>
 
-        <br>
+      <br>
       </div>
     </section>
 
@@ -267,9 +270,68 @@
           <p class="title-red">
             Nuestros clientes opinan de GIINTAPE
           </p>
-        
+        </h5>
+        <div class="swiper mySwiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user1.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Web Designer</span>
+                <span class="card__name">John Doe</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user2.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Ui Designer</span>
+                <span class="card__name">Sarah Bowen</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user3.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Web Developer</span>
+                <span class="card__name">David Murphy</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user4.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Mobile Designer</span>
+                <span class="card__name">Kelsey West</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+
     </section>
-  </ol>
+  </img>
   <br><br>
   <!-- end service section -->
 
@@ -381,6 +443,29 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>
