@@ -11,6 +11,7 @@
 	position: fixed;
 	left: 0;
 	top: 25%;
+  z-index: 9999;
 }
 .container-bar a{
 	display: block;
@@ -1264,6 +1265,7 @@ ul li {
   display: flex;
   max-width: 1300px;
   margin: auto;
+  position: relative;
 }
 .title-cards {
   width: 100%;
