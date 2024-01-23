@@ -35,10 +35,13 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
 
   <!--Icon-Font-->
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -127,6 +130,58 @@
           negocio, crear y gestionar tu contenido y brindarte estadísticas reales de nuestros resultados.
         </p>
         <br>
+      </div>
+    </section>
+
+    <!-- Servicio 5 -->
+    <br>
+    <section>
+      <div class="container" id="veri2">
+        <h5>
+          <p class="title-red">
+            COMUNIDAD ANTES DE VENTA
+          </p>
+        </h5>
+        <p>
+          En Corporativo SAR creemos y sabemos por experiencia que, la venta es la consecuencia
+          de servir a tu comunidad. Es por ello que, nos comprometemos a generar contenido digital
+          para nuestros clientes, que cumpla con las 3V
+        </p>
+        <br>
+      </div>
+    </section>
+
+    <!-- Servicio 3 -->
+    <br>
+    <section>
+      <div class="container" id="veri2">
+        <h5>
+          <p class="title-red">
+            ¿Qué incluyen los planes de Servicio de Marketing Digital?
+          </p>
+        </h5>
+        <p class="">Creación y gestión de contenido en redes sociales</p>
+        <p class="">
+          Basados en nuestra experiencia y nuestra premisa, tu contenido
+          será Viral, aportará Valor y tendrás prospectos listos para
+          cerrar esa Venta que necesitas.
+        </p>
+        <br>
+        <p class="">Branding</p>
+        <p class="">
+          Juntos definiremos el branding de tu empresa: identidad
+          corporativa, definición de público objetivo, definición de
+          objetivos y estrategias, mejores canales de comunicación,
+          foto de perfil y portada para redes sociales
+        </p>
+        <br>
+        <p class="">Resultados Orgánicos</p>
+        <p class="">
+          No te dejes engañar. Todo es un proceso y nosotros SÍ logramos
+          resultados orgánicos que verás reflejados en tus redes sociales.
+          Antes de inyectarles dinero, primero posiciónate orgánicamente.
+        </p>
+        <br>
         <p class="">Campañas de publicidad pagada (Ads o SEM) en Facebook,
           Instagram y Google</p>
         <p class="">
@@ -172,7 +227,6 @@
       <div class="container" id="veri2">
         <h5>
           <p class="title-red">
-            NUESTRO PROCESO DE COMPRA
             COMUNIDAD ANTES DE VENTA
           </p>
         </h5>
@@ -381,7 +435,7 @@
         <br>
       </div>
     </section>
-  </ol>
+  </img>
   <br><br>
   <!-- end service section -->
 
@@ -399,8 +453,7 @@
               GIINTAPE INOVAHUE
             </h2>
             <p>
-              GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
-              GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
+              Sistemas de Verificación MOR, SA de CV
             </p>
           </div>
         </div>
@@ -457,9 +510,20 @@
               </a>
             </div>
             <div class="call">
-              <h6 style="font-size: 20px;">
+              <h6 style="font-size: 30px;">
                 Tel&eacute;fono:
-              </h6>
+              </h6 >
+              <a href="">
+                <img src="images/telephone.png" alt="">
+                <span>
+                  (+52)55 4686 3772
+                </span>
+              </a>
+            </div>
+            <div class="email">
+              <h6 style="font-size: 30px;">
+                Correo:
+              </h6 >
               <a href="">
                 <img src="images/telephone.png" alt="">
                 <span style="font-size: 16px;">
@@ -505,6 +569,29 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>
