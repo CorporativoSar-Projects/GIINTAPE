@@ -20,7 +20,7 @@
 	line-height: 50px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 18px;
+	font-size:18px;
 	position: relative;
 	transition: all 500ms ease;
 	color: #fff;
@@ -101,10 +101,8 @@
 /*End barra Redes*/
 body {
   font-family: 'Montserrat';
-  font-family: 'Montserrat';
-  color: #000000;
+  color: #6c8df8;
   background-color: #ffffff;
-  font-size: 22px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -119,14 +117,6 @@ body {
     height: 63px;
     line-height: 66px;
   }
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.with_p {
-  color: #fff;
 }
 
 .layout_padding {
@@ -153,6 +143,7 @@ body {
   padding-bottom: 75px;
 }
 
+/*Titulos secciones*/
 .custom_heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,12 +151,13 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
 }
 
 .custom_heading-container h3 {
   text-transform: uppercase;
   font-weight: bold;
-  color: #000000;
+  color: #023047;
   position: relative;
 }
 
@@ -182,6 +174,7 @@ body {
   background-color: #4aadcd;
   border-radius: 15px;*/
 }
+/*End titulos secciones*/
 
 .btn-box {
   display: -webkit-box;
@@ -323,42 +316,6 @@ a:focus {
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.png);
   background-size: 42px;
-}
-
-/*end header section*/
-
-.bg {
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-}
-
-.normas_section {
-  text-align: center;
-}
-
-.normas_section .img-box img {
-  width: 350px;
-}
-
-.about_section {
-  text-align: center;
-}
-
-.about_section .img-box img {
-  width: 350px;
-}
-
-.politica_section {
-  text-align: center;
-}
-
-.politica_section .img-box img {
-  width: 350px;
-}
-
-.service_section {
-  text-align: center;
-  position: relative;
 }
 
 /* Margen Galería de fotos*/
@@ -731,16 +688,16 @@ table th {
   margin: 5px 0;
 }
 
-/*Color rojo (red) título h5*/
+/*Color títulos h5*/
 .container h5 {
   font-weight: bold;
-  color: #ff4f5a;
+  color: #9cd5f1;
   font-size: 35px;
 }
 
 .title-red {
   font-weight: bold;
-  color: #ff4f5a;
+  color: #023047;
 }
 
 .container .bold_ol li {
