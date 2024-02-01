@@ -224,7 +224,7 @@
   color: #999;
 }
 
-    /*Informacion de conracto*/
+    /*Informacion de contacto*/
 
 
 .info{
@@ -288,6 +288,46 @@
 .sci li a:hover{
   color: white;
 }
+
+.map{
+  padding: 0;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+  /*Responsive dessing*/
+@media (max-width: 991px){
+  .contactUs{
+    padding: 20px;
+  }
+  .box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "map";
+  }
+  .formBox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputBox{
+    width: 100%;
+  }
+  .contact{
+    padding: 30px;
+  }
+  .map{
+    min-height: 300px;
+    padding: 0;
+  }
+}
+
 /*End Secciion Contacto*/
 
 body {
