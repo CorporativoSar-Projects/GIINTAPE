@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: Montserrat;
 }
 .container-bar{
 	width: 100%;
@@ -1541,4 +1541,94 @@ ul li {
 /*COLOR LETRA BANNER*/
 .encal1 {
   color: white;
+}
+
+:root{
+  /* COLORS */
+  --color: #9176FF;
+  --bg-color: #f4f4f4;
+}
+
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 650px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 0;
+  border: #fff solid 1px;
+  margin: 0 2em;
+
+  transition: all .5s ease;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 100%;
+  height: 120%;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.card__title{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: var(--color);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.card__btn{
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
 }
