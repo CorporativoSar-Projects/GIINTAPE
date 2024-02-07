@@ -5,6 +5,11 @@
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--Barra de Redes-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--Icon-Font-->
+   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+ <!--End Barra de Redes-->
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
@@ -45,6 +50,26 @@
 </head>
 
 <body>
+  <!--Barra Redes-->
+<div class="container-bar">
+	<input type="checkbox" id="btn-social">
+	<label for="btn-social" class="fa fa-play"></label>
+		<div class="icon-social">
+			<a href="https://www.facebook.com/innsolcorporation" class="fa fa-facebook">
+				<span id="title">Facebook</span>
+			</a>
+			<a href="https://www.instagram.com/giintape_innovahue/" class="fa fa-instagram">
+				<span id="title">Instagram</span>
+			</a>
+			<a href="#" class="fa-envelope">
+				<span id="title">Correo</span>
+			</a>
+			<a href="#" class="fa fa-whatsapp">
+				<span id="title">WhatsApp</span>
+			</a>
+		</div>
+	</div>
+  <!--End Barra Redes-->
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -86,42 +111,90 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h4>GIINTAPE INOVAHUE</h4>
-          <br>
-        </div>
-        <div class="col-md-7">
-          <p class="layout_padding2-bottom">
-            <u>Dirección:</u><br>
-            Río Guadiana 31 <br>
-            Col. Cuauhtémoc <br>
-            Cuauhtémoc, CDMX. México <br>
-            CP: 06500 <br>
-            contacto@giintapeinnovahue.com <br>
-            Teléfono: (+52)55 4686 3772 <br>
-          </p>
-          <div class="imglogocontac">
-            <img src="images/logogiintape.png" width="150" height="120">
+ <!-- Contac section-->
+ <div class="contactUs">
+  <div class="titlecontac">
+    <h2>GIINTAPE INNOVAHUE</h2>
+  </div>
+  <div class="box">
+    <!--Formulario-->
+    <div class="contact form">
+      <h3>Envia un mensaje</h3>
+      <form>
+        <div class="formBox">
+          <div class="row50">
+            <div class="inputBox">
+              <span>Nombre(s):</span>
+              <input type="text" placeholder="Luis">
+            </div>
+            <div class="inputBox">
+              <span>Apellidos:</span>
+              <input type="text" placeholder="Sanchez">
+            </div>
+          </div>
+
+          <div class="row50">
+            <div class="inputBox">
+              <span>Correo:</span>
+              <input type="text" placeholder="Correo@ejemplo.com">
+            </div>
+            <div class="inputBox">
+              <span>Telefono:</span>
+              <input type="text" placeholder="(+52)55 123 456 78">
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="inputBox">
+              <span>Mensaje:</span>
+              <textarea placeholder="Escribe tu mensaje aqui..."></textarea>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="inputBox">
+              <input type="submit" value="Enviar">
+            </div>
           </div>
         </div>
-        
-        <!-- Mapa -->
-        <div class="col-md-5">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.8853622015522!2d-99.16195764760019!3d19.429412810948893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3499195555%3A0xe5371dd9392d7b6a!2sGuadiana%2031!5e0!3m2!1ses!2smx!4v1704670349951!5m2!1ses!2smx" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      </form>
+    </div>
+
+    <!--Informacion-->
+    <div class="contact info">
+      <h3>Contacto</h3>
+      <div class="infoBox">
+        <div>
+          <span><ion-icon name="location"></ion-icon></span>
+          <p>Río Guadiana 31, Col. Renacimiento <br>Cuauhtémoc,06500, CDMX.</p>
         </div>
-        <!-- Fin mapa -->
-       
+        <div>
+          <span><ion-icon name="mail"></ion-icon></span>
+          <a href="mailto:contacto@giintapeinnovahue.com">contacto@giintapeinnovahue.com</a>
+        </div>
+        <div>
+          <span><ion-icon name="call"></ion-icon></span>
+          <a href="tel:+525546863772">(+52)55 4686 3772</a>
+        </div>
+        <!--Links Redes Sociales-->
+        <ul class="sci">
+          <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        
       </div>
     </div>
-  </section>
-  <!-- end contact section -->
+
+
+    <!--Mapa-->
+    <div class="contact map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6466936793603!2d-99.16331893035856!3d19.430252298865568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff34991fe123%3A0xde712c60692aefd4!2sR%C3%ADo%20Guadiana%2031%2C%20Col.%20Renacimiento%2C%20Cuauht%C3%A9moc%2C%2006500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1706825220453!5m2!1ses-419!2smx" 
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+<!--End Contact section-->
 
 
 
@@ -133,7 +206,7 @@
           <img src="images/logogiintape.png" width="200" height="150">
           <div class="info-logo">
             <h2>
-              GIINTAPE INOVAHUE
+              GIINTAPE INNOVAHUE
             </h2>
             <p>
               GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
@@ -175,7 +248,7 @@
               Información de Contacto
             </h4>
             <div class="location">
-              <h6 style="font-size: 20px;">
+              <h6 style="font-size: 20px; color: white;">
                 Nuestras Oficinas:
               </h6>
               <a href="">
@@ -186,7 +259,7 @@
               </a>
             </div>
             <div class="call">
-              <h6 style="font-size: 20px;">
+              <h6 style="font-size: 20px; color: white;">
                 Tel&eacute;fono:
               </h6 >
               <a href="">
@@ -197,7 +270,7 @@
               </a>
             </div>
             <div class="email">
-              <h6 style="font-size: 20px;">
+              <h6 style="font-size: 20px; color: white;">
                 Correo:
               </h6 >
               <a href="">
@@ -208,7 +281,7 @@
               </a>
             </div>
             <div class="time">
-              <h6 style="font-size: 20px;">
+              <h6 style="font-size: 20px; color: white;">
                 Horario:
               </h6>
               <a href="">
@@ -216,7 +289,7 @@
                 <span style="font-size: 16px;">
                   Lunes a viernes de 8 a 17 hrs.
                 </span><br>
-                <span style="font-size: 16px;">
+                <span>
                   Sabado de 8 a 13 hrs.
                 </span>
               </a>
@@ -231,6 +304,9 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
