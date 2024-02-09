@@ -6,10 +6,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--Barra de Redes-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!--Icon-Font-->
-   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
- <!--End Barra de Redes-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <!--End Barra de Redes-->
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
@@ -51,24 +52,24 @@
 
 <body>
   <!--Barra Redes-->
-<div class="container-bar">
-	<input type="checkbox" id="btn-social">
-	<label for="btn-social" class="fa fa-play"></label>
-		<div class="icon-social">
-			<a href="https://www.facebook.com/innsolcorporation" class="fa fa-facebook">
-				<span id="title">Facebook</span>
-			</a>
-			<a href="https://www.instagram.com/giintape_innovahue/" class="fa fa-instagram">
-				<span id="title">Instagram</span>
-			</a>
-			<a href="#" class="fa-envelope">
-				<span id="title">Correo</span>
-			</a>
-			<a href="#" class="fa fa-whatsapp">
-				<span id="title">WhatsApp</span>
-			</a>
-		</div>
-	</div>
+  <div class="container-bar">
+    <input type="checkbox" id="btn-social">
+    <label for="btn-social" class="fa fa-play"></label>
+    <div class="icon-social">
+      <a href="https://www.facebook.com/innsolcorporation" class="fa fa-facebook">
+        <span id="title">Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/giintape_innovahue/" class="fa fa-instagram">
+        <span id="title">Instagram</span>
+      </a>
+      <a href="#" class="fa-envelope">
+        <span id="title">Correo</span>
+      </a>
+      <a href="#" class="fa fa-whatsapp">
+        <span id="title">WhatsApp</span>
+      </a>
+    </div>
+  </div>
   <!--End Barra Redes-->
   <div class="hero_area">
     <!-- header section strats -->
@@ -100,7 +101,7 @@
                   <a class="nav-link" href="service.html"> Servicios </a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html"> Contacto </a>
+                  <a class="nav-link" href="contact.html"> Talento INNOVAHUE </a>
                 </li>
               </ul>
             </div>
@@ -111,90 +112,133 @@
     <!-- end header section -->
   </div>
 
- <!-- Contac section-->
- <div class="contactUs">
-  <div class="titlecontac">
-    <h2>GIINTAPE INNOVAHUE</h2>
-  </div>
-  <div class="box">
-    <!--Formulario-->
-    <div class="contact form">
-      <h3>Envia un mensaje</h3>
-      <form>
-        <div class="formBox">
-          <div class="row50">
-            <div class="inputBox">
-              <span>Nombre(s):</span>
-              <input type="text" placeholder="Luis">
-            </div>
-            <div class="inputBox">
-              <span>Apellidos:</span>
-              <input type="text" placeholder="Sanchez">
-            </div>
-          </div>
-
-          <div class="row50">
-            <div class="inputBox">
-              <span>Correo:</span>
-              <input type="text" placeholder="Correo@ejemplo.com">
-            </div>
-            <div class="inputBox">
-              <span>Telefono:</span>
-              <input type="text" placeholder="(+52)55 123 456 78">
-            </div>
-          </div>
-
-          <div class="row100">
-            <div class="inputBox">
-              <span>Mensaje:</span>
-              <textarea placeholder="Escribe tu mensaje aqui..."></textarea>
-            </div>
-          </div>
-
-          <div class="row100">
-            <div class="inputBox">
-              <input type="submit" value="Enviar">
-            </div>
-          </div>
-        </div>
-      </form>
+  <!-- Contac section-->
+  <div class="contactUs">
+    <div class="titlecontac">
+      <h2>TALENTO INNOVAHUE</h2>
     </div>
+    <div class="box">
 
-    <!--Informacion-->
-    <div class="contact info">
-      <h3>Contacto</h3>
-      <div class="infoBox">
-        <div>
-          <span><ion-icon name="location"></ion-icon></span>
-          <p>Río Guadiana 31, Col. Renacimiento <br>Cuauhtémoc,06500, CDMX.</p>
+      <!--Formulario-->
+      <div class="contact form">
+        <h3>Unete a nuestro equipo de trabajo</h3>
+        <form>
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>Nombre(s)*:</span>
+                <input type="text" placeholder="Luis" required>
+              </div>
+              <div class="inputBox">
+                <span>Apellidos*:</span>
+                <input type="text" placeholder="Sanchez" required>
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Correo*:</span>
+                <input type="email" name="email" id="email" placeholder="Correo@ejemplo.com" required>
+              </div>
+              <div class="inputBox">
+                <span>Telefono*:</span>
+                <input type="tel" id="telefono" name="telefono" placeholder="(+52)55 123 456 78" required>
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Area de interes*:</span>
+                <select name="AreaDeInteres" required>
+                  <option value="Marketing">Marketing y ventas</option>
+                  <option value="Desarrollo">Desarrollo de software</option>
+                  <option value="Legal">Legal</option>
+                  <option value="Contabilidad">Contabilidad</option>
+                  <option value="Operaciones">Operaciones</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Situacion Profecional*:</span>
+                <select name="SituacionProfecional" required>
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Pasante">Pasante</option>
+                  <option value="egresado1">Recien egresado (Sin Titulo)</option>
+                  <option value="egresado2">Recien egresado (Con Titulo)</option>
+                </select>
+              </div>
+            </div>
+            <span style="color: white;">Adjunta CV: </span>
+            <div class="row100">
+              <div class="inputBox">
+                <button class="contenedor-btn-file bordeado">
+                  <i class="fas fa-file"></i>
+                  Adjuntar archivo
+                  <label for="btn-file"></label>
+                  <input type="file" id="btn-file">
+              </button>
+              </div>
+            </div>
+
+            <br>
+
+            <span style="color: white;">¿Trabajas actualmente?: </span>
+            <div>
+              <input type="checkbox" class="toggle" id="check">
+              <label for="check" data-checked="SI" class="check" data-unchecked="NO"></label>
+            </div>
+
+            <br>
+
+            <div class="row100">
+              <div class="inputBox">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!--Informacion-->
+      <div class="contact info">
+        <h3>Contacto</h3>
+        <div class="infoBox">
+          <div>
+            <span><ion-icon name="location"></ion-icon></span>
+            <p>Río Guadiana 31, Col. Renacimiento <br>Cuauhtémoc,06500, CDMX.</p>
+          </div>
+          <div>
+            <span><ion-icon name="mail"></ion-icon></span>
+            <a href="mailto:contacto@giintapeinnovahue.com">contacto@giintapeinnovahue.com</a>
+          </div>
+          <div>
+            <span><ion-icon name="call"></ion-icon></span>
+            <a href="tel:+525546863772">(+52)55 4686 3772</a>
+          </div>
+          <!--Links Redes Sociales-->
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon
+                  name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+
         </div>
-        <div>
-          <span><ion-icon name="mail"></ion-icon></span>
-          <a href="mailto:contacto@giintapeinnovahue.com">contacto@giintapeinnovahue.com</a>
-        </div>
-        <div>
-          <span><ion-icon name="call"></ion-icon></span>
-          <a href="tel:+525546863772">(+52)55 4686 3772</a>
-        </div>
-        <!--Links Redes Sociales-->
-        <ul class="sci">
-          <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        </ul>
-        
+      </div>
+
+
+      <!--Mapa-->
+      <div class="contact map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6466936793603!2d-99.16331893035856!3d19.430252298865568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff34991fe123%3A0xde712c60692aefd4!2sR%C3%ADo%20Guadiana%2031%2C%20Col.%20Renacimiento%2C%20Cuauht%C3%A9moc%2C%2006500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1706825220453!5m2!1ses-419!2smx"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-
-
-    <!--Mapa-->
-    <div class="contact map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6466936793603!2d-99.16331893035856!3d19.430252298865568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff34991fe123%3A0xde712c60692aefd4!2sR%C3%ADo%20Guadiana%2031%2C%20Col.%20Renacimiento%2C%20Cuauht%C3%A9moc%2C%2006500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1706825220453!5m2!1ses-419!2smx" 
-      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
   </div>
-</div>
-<!--End Contact section-->
+  <!--End Contact section-->
 
 
 
@@ -236,7 +280,7 @@
               </li>
               <li>
                 <a style="font-size: 23px" href="contact.html">
-                  Contacto
+                  Talento INNOVAHUE
                 </a>
               </li>
             </ul>
@@ -261,7 +305,7 @@
             <div class="call">
               <h6 style="font-size: 20px; color: white;">
                 Tel&eacute;fono:
-              </h6 >
+              </h6>
               <a href="">
                 <img src="images/telephone.png" alt="">
                 <span style="font-size: 16px;">
@@ -269,10 +313,11 @@
                 </span>
               </a>
             </div>
+            <br>
             <div class="email">
               <h6 style="font-size: 20px; color: white;">
                 Correo:
-              </h6 >
+              </h6>
               <a href="">
                 <img src="images/telephone.png" alt="">
                 <span style="font-size: 16px;">
@@ -289,9 +334,6 @@
                 <span style="font-size: 16px;">
                   Lunes a viernes de 8 a 17 hrs.
                 </span><br>
-                <span>
-                  Sabado de 8 a 13 hrs.
-                </span>
               </a>
             </div>
           </div>
