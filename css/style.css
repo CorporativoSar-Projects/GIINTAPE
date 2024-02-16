@@ -11,7 +11,7 @@
 	position: fixed;
 	left: 0;
 	top: 25%;
-  z-index: 9999;
+  z-index: 999999;
 }
 .container-bar a{
 	display: block;
@@ -214,7 +214,7 @@
   display: inline-block;
   position: relative;
   background-color: #186CC3;
-  color: #fff;
+  color: #ffffff;
   border: 0;
   padding: 12px 20px;
   border-radius: 8px;
@@ -304,7 +304,7 @@ input[type=checkbox].toggle + label.check:before{
 }
 
 input[type=checkbox].toggle:not(:checked) + label{
-  background-color: #5a5959;
+  background-color: #41525d;
   text-align: right;
 }
 
@@ -324,6 +324,7 @@ input[type=checkbox].toggle:not(:checked) + label:before{
 input[type=checkbox].toggle:checked + label{
   text-align: left;
   border-color: white;
+  background-color: rgb(54, 130, 171);
 }
 
 input[type=checkbox].toggle:checked + label:after{
@@ -339,9 +340,11 @@ input[type=checkbox].toggle:checked + label:before{
   background-color: white;
 }
 
+
+/*Boton "Enviar"*/
 .inputBox input[type="submit"]{
-  background-color: #ff578b;
-  color: #ffff;
+  background-color: #08365a;
+  color: #ffffff;
   border: none;
   font-size: 1.1em;
   width: 120px;
@@ -649,7 +652,7 @@ a:focus {
 }
 
 .custom_nav-container {
-  z-index: 99999;
+  z-index: 9999;
   padding: 5px 0;
 }
 
@@ -661,6 +664,76 @@ a:focus {
   background-image: url(../images/menu.png);
   background-size: 42px;
 }
+
+header ul li{ 
+  
+  position: relative;
+  list-style: none;
+  float: left;
+  
+}
+
+header ul li a{
+  
+  color: white;
+  font-size: 1.1em;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+header ul li ul{
+  
+  color: white;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #023047;
+  display: none;
+  
+}
+
+header ul li:hover ul{
+  
+  color: white;
+  display: block;
+  
+}
+
+header ul li ul li{
+  color : white;
+  position: relative;
+  width: 100%;
+  outline: none;
+  
+}
+
+/*Responsive*/
+@media (max-width: 900px){
+
+  header nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #023047;
+  }
+  header nav ul li{
+    width: 100%;
+  }
+
+  header nav ul li ul{
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+
+
+}
+
+
 
 /* Margen Galería de fotos*/
 .service_section .service_container .col-md-3 {
@@ -678,6 +751,7 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
+
 
 /*Alinear títulos de tablas*/
 table th {
