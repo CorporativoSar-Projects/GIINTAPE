@@ -112,7 +112,6 @@
   transform: translateX(-100%);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.0);
 }
-
 /*End barra Redes*/
 
 /*Seccion Contacto*/
@@ -2038,6 +2037,7 @@ ul li {
 }
 
 :root {
+:root{
   /* COLORS */
   --color: #9176FF;
   --bg-color: #f4f4f4;
