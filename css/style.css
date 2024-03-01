@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'monserrat' sans-serif;
 }
 
 .container-bar {
@@ -488,7 +488,6 @@ input[type=checkbox].toggle:checked+label:before {
 /*End Secciion Contacto*/
 
 body {
-  font-family: 'Montserrat', sans-serif;
   color: #6c8df8;
   background-color: #ffffff;
 }
@@ -537,7 +536,6 @@ body {
   text-align: center;
   font-size: 45px;
   color: #000000;
-  font-family: 'monserrat', sans-serif;
   font-weight: bold;
 }
 
@@ -559,7 +557,6 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-box a {
@@ -587,7 +584,6 @@ body {
 
 .header_section {
   background-color: #023047;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .header_section .container-fluid {
@@ -1016,11 +1012,19 @@ h7 {
   padding: 7px 0;
   color: #186CC3;
   text-decoration: none;
-  width: 100px;
+  width: 150px;
   text-align: center;
   border: 1px solid white;
   border-radius: 50px;
   background: white;
+}
+
+.banner_descripcion p{
+  position: center fixed;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
 }
 
 /*FIN BANNER ABOUT*/
@@ -1039,6 +1043,14 @@ html {
   padding: 0 40px;
   align-items: center;
   background-color: #000000;
+}
+
+.textabout_descripcion{
+  height: auto;
+  width: 700px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
 }
 
 .textabout h2 {
@@ -1072,6 +1084,9 @@ html {
 
 .textabout img {
   height: 50%;
+  width: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
@@ -1174,11 +1189,28 @@ html {
 
 /*END CARRUCEL CLIENTES INDEX*/
 
+/*SECCIONES SCROOL MK*/
+.seccionmk{
+  background-color: #ffb703;
+
+}
+
+.seccionmk a{
+  display: inline-block;
+  padding: 7px 0;
+  text-decoration: none;
+  width: 260px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*END SECCIONES SCROOL MK*/
 
 /*TARJETAS DE PRECIOS*/
 .contenedorprecios {
   width: 100%;
   min-height: 100vh;
+  
 }
 
 .contenedorprecios h1 {
@@ -1199,38 +1231,42 @@ html {
 }
 
 .price-col {
-  background: #023047;
+  background: rgba(255, 255, 255, 0.174);
   padding: 10% 15%;
   border-radius: 10px;
-  color: #fff;
+  color: black;
   text-align: center;
 }
 
 .price-col p {
   font-size: 35px;
   font-weight: 700;
+  color: black;
 }
 
 .price-col h2 {
   font-size: 18px;
   margin: 20px 0 20px;
   text-align: center;
+  color: black;
 }
 
 .price-col h3 {
   font-size: 40px;
   margin: 20px 0 40px;
   font-weight: 600;
+  color: black;
 }
 
 .price-col h3 span {
   font-size: 16px;
+  color: black;
 }
 
 .price-col ul {
   text-align: left;
   margin: 20px 0;
-  color: #ddd;
+  color: #000000;
   list-style: none;
 }
 
@@ -1240,7 +1276,7 @@ html {
 
 .price-col ul li::before {
   content: '\2022';
-  color: #219ebc;
+  color: #fb8500;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -1249,9 +1285,9 @@ html {
   width: 100%;
   padding: 14px 0;
   background: transparent;
-  color: #fff;
+  color: #000000;
   font-size: 15px;
-  border: 1px solid #219EBC;
+  border: 1px solid #fb8500;
   border-radius: 6px;
   margin-top: 30px;
   cursor: pointer;
@@ -1259,14 +1295,139 @@ html {
 }
 
 .price-col button:hover {
-  background: #219EBC;
+  background: #fb8500;
 }
 
+.price-col input {
+  display: none;
+}
+
+.price-col .detailsmk {
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.price-col input:checked ~ .detailsmk {
+  max-height: 100%;
+}
+
+.price-col label {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .price-col {
+    width: 100%;
+  }
+}
 /*END TARJETAS DE PRECIOS*/
+
 
 /*PORTAFOLIO MK*/
 
-.contenedorportafolio img {
+.Carouselmk{
+  width: 100%;
+  background-color: #ffb703;
+}
+.Carouselmk h2{
+  font-size: 26px;
+  line-height: 38px;
+  padding-bottom: 24px;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* images */
+
+.slick-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+.slick{
+  position: relative;
+  width: 275px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+.slick h4{
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px;
+}
+.slick h4 small{
+  font-size: 15px;
+  display: block;
+}
+.slick a img{
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+  transition: .3s ease-in-out;
+}
+.slick a img:hover{
+  opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow{
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border: 0;
+  cursor: pointer;
+}
+.slick-arrow:focus{
+  outline: 0;
+}
+.slick-arrow svg{
+  width: 12px;
+  height: 100%;
+  color: rgba(0,0,0,.7);
+}
+.slick-prev{
+  left: 0px;
+}
+.slick-next{
+  right: 0px;
+}
+
+
+/*.contenedorportafolio img {
   width: 100%;
 }
 
@@ -1307,9 +1468,123 @@ html {
 .imagenportafolio{
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.400);
-}
+}*/
 
 /*END PORTAFOLIO MK*/
+
+/*portafolio desarrollo*/
+.containerweb{
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sliderweb{
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+
+.slider__containerweb{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 1em;
+}
+
+.slider__bodyweb{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1.5s;
+}
+
+.slider__body--showweb{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slider__textsweb{
+  max-width: 600px;
+}
+
+.subtitleweb{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.slider__reviewweb{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.slider__vidweb{
+  width: 450px;
+  height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__arrowweb{
+  cursor: pointer;
+  width: 90%;
+}
+
+.slider__arrowweb:nth-of-type(2){
+  justify-self: end;
+}
+
+@media (max-width:768px){
+  .slider__bodyweb{
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content 1fr;
+      gap: 1em;
+  }
+
+  .slider__pictureweb{
+      grid-row: 1/2;
+  }
+
+  .slider__vidweb{   
+      width: 210px;
+      height: auto;
+  }
+}
+
+@media (max-width:425px){
+  .slider__containerweb{
+      grid-template-columns: 25px 1fr 25px;
+  }
+
+  .slider__arrowweb{
+     width: 100%;
+  }
+
+  .slider__vidweb{   
+      width: 180px;
+      height: auto;
+  }
+
+  .subtitleweb{
+      font-size: 2rem;
+      margin-bottom: 15px;
+  }
+
+  .slider__reviewweb{
+      font-size: 1rem;
+      line-height: 1.6;
+  }
+}
+/*end portafolio desarrolo*/
 
 .info_section {
   background-color: #023047;
@@ -1461,7 +1736,6 @@ body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   font-size: 100%;
 }
 
@@ -1596,7 +1870,6 @@ ul li {
 .footer_section {
   background-color: #ffffff;
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 

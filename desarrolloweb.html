@@ -79,7 +79,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logogiintape.png" width="40" height="40">
+            <img src="images/logogiintape.png" width="40" height=auto>
             <span>
               GIINTAPE
             </span>
@@ -107,9 +107,9 @@
                     <li>
                       <a href="desarrolloweb.html">Desarrollo</a>
                     </li>
-                    <li>
+                    <!--<li>
                       <a href="capacitacionms.html">Capacitacion MS</a>
-                    </li>
+                    </li>-->
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -151,63 +151,78 @@
 
     <br>
 
-    <!--PORTAFOLIO-->
+    <!--portafolio-->
+    <section class="sliderweb">
+      <div class="slider__containerweb containerweb">
+          <img src="images/leftarrow.svg" class="slider__arrowweb" id="before">
 
-  <h1 class="titulos_secciones">
-    Algo de Nuestro Trabajo
-  </h1>
+          <section class="slider__bodyweb slider__body--showweb" data-id="1">
+              <div class="slider__textsweb">
+                  <h2 class="subtitleweb">NombreMarca 1</h2>
+                  <p class="slider__reviewweb">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed atque officiis totam modi, non
+                      maiores.
+                  </p>
+              </div>
 
-  <main class="mainmk">
-    <div class="contenedorportafolio">
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia1.jpg" alt="impr1">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia2.jpg" alt="impr2">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia3.jpg" alt="impr3">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia4.jpg" alt="impr4">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia5.jpg" alt="impr5">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia6.jpg" alt="impr6">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia7.jpg" alt="impr7">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia8.jpg" alt="impr8">
-        </figure>
-      </div>
-      <div class="contenedorimagenes">
-        <figure>
-          <img class="imagenportafolio" src="images/PortafolioEvidencias/evidencia9.jpg" alt="impr9">
-        </figure>
-      </div>
-    </div>
-  </main>
+              <figure class="slider__pictureweb">
+                <video controls class="slider__vidweb">
+                  <source src="Videos/videop.mp4">
+               </video>
+              </figure>
+          </section>
 
-  <!--END PORTAFOLIO-->
+          <section class="slider__bodyweb" data-id="2">
+              <div class="slider__textsweb">
+                  <h2 class="subtitleweb">NombreMarca 2</h2>
+                  <p class="slider__reviewweb">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nesciunt odio, nihil quibusdam autem nam in veritatis voluptas nobis.
+                  </p>
+              </div>
+
+              <figure class="slider__pictureweb">
+                <video controls class="slider__vidweb">
+                  <source src="Videos/videop.mp4">
+               </video>
+              </figure>
+          </section>
+
+          <section class="slider__bodyweb" data-id="3">
+              <div class="slider__textsweb">
+                  <h2 class="subtitleweb">NombreMarca 3</h2>
+                  <p class="slider__reviewweb">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quis accusantium perferendis vel cumque illum quia totam repellendus!
+                  </p>
+              </div>
+
+              <figure class="slider__pictureweb">
+                <video controls class="slider__vidweb">
+                  <source src="Videos/videop.mp4">
+               </video>
+              </figure>
+          </section>
+
+          <section class="slider__bodyweb" data-id="4">
+              <div class="slider__textsweb">
+                  <h2 class="subtitleweb">NombreMarca 4</h2>
+                  <p class="slider__reviewweb">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quis accusantium perferendis vel cumque illum quia totam repellendus!
+                  </p>
+              </div>
+
+              <figure class="slider__pictureweb">
+                   <video controls class="slider__vidweb">
+                      <source src="Videos/videop.mp4">
+                   </video>
+              </figure>
+          </section>
+
+          <img src="images/rightarrow.svg" class="slider__arrowweb" id="next">
+      </div>
+  </section>
+
+  <script src="js/sliders.js"></script>
+    <!--end portafolio-->
 
    <!-- footer section -->
    <section class="info_section layout_padding">
