@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--pruebaKath-->
+
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -53,25 +54,25 @@
 </head>
 
 <body>
-<!--Barra Redes-->
-<div class="container-bar">
-	<input type="checkbox" id="btn-social">
-	<label for="btn-social" class="fa fa-play"></label>
-		<div class="icon-social">
-			<a href="https://www.facebook.com/innsolcorporation" class="fa fa-facebook">
-				<span id="title">Facebook</span>
-			</a>
-			<a href="https://www.instagram.com/giintape_innovahue/" class="fa fa-instagram">
-				<span id="title">Instagram</span>
-			</a>
-			<a href="#" class="fa fa-correo">
-				<span id="title">Correo</span>
-			</a>
-			<a href="#" class="fa fa-whatsapp">
-				<span id="title">WhatsApp</span>
-			</a>
-		</div>
-	</div>
+  <!--Barra Redes-->
+  <div class="container-bar">
+    <input type="checkbox" id="btn-social">
+    <label for="btn-social" class="fa fa-play"></label>
+    <div class="icon-social">
+      <a href="https://www.facebook.com/innsolcorporation" class="fa fa-facebook">
+        <span id="title">Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/giintape_innovahue/" class="fa fa-instagram">
+        <span id="title">Instagram</span>
+      </a>
+      <a href="#" class="fa fa-correo">
+        <span id="title">Correo</span>
+      </a>
+      <a href="#" class="fa fa-whatsapp">
+        <span id="title">WhatsApp</span>
+      </a>
+    </div>
+  </div>
   <!--End Barra Redes-->
 
   <div class="hero_area">
@@ -101,13 +102,15 @@
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Servicios </a>
+
+                  <a class="nav-link">Servicios </a>
                   <ul>
-                    <li>
-                      <a href="consultoriamk.html">Consultoria Mk</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="consultoriamk.html">Consultoria Marketing</a>
                     </li>
-                    <li>
-                      <a href="desarrolloweb.html">Desarrollo</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="desarrolloweb.html">Desarrollo Web</a>
+
                     </li>
                     <!--<li>
                       <a href="capacitacionms.html">Capacitacion MS</a>
@@ -115,6 +118,11 @@
                   </ul>
                 </li>
                 <li class="nav-item">
+
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+
                   <a class="nav-link" href="contact.html"> Talento INNOVAHUE</a>
                 </li>
               </ul>
@@ -295,29 +303,31 @@
       <br>
       <br>
     </section>
-
-
-    <!-- citas section -->
-    <center>
-      <section class="cita_section layout_padding-bottom">
-        <div class="formulario">
-          <div class="custom_heading-container">
-            <h1 class="titulos_secciones ">
-              Agenda Tu Primer Cita
-            </h1>
-          </div>
-          <div class="form">
-            <p id="registrate">¡REGÍSTRATE!</p>
-            <br>
-            <iframe src="https://forms.office.com/r/VcVhuZPuqa"></iframe>
-          </div>
-        </div>
-        <br>
-      </section>
-    </center>
-    <!-- end clientes section -->
   </div>
-  
+
+
+  <!-- citas section -->
+  <center>
+    <section class="cita_section layout_padding-bottom">
+      <div class="formulario">
+        <div class="custom_heading-container">
+          <h1 class="titulos_secciones ">
+            Agenda Tu Primer Cita
+          </h1>
+        </div>
+        <div class="form">
+          <p id="registrate">¡REGÍSTRATE!</p>
+          <br>
+          <iframe src="https://forms.office.com/r/VcVhuZPuqa"></iframe>
+        </div>
+      </div>
+      <br>
+    </section>
+  </center>
+  <!-- end clientes section -->
+
+
+
   <!-- footer section -->
   <section class="info_section layout_padding">
     <div class="container">
@@ -423,6 +433,29 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 
 </body>
 
