@@ -50,6 +50,11 @@
 
   <!--Icon-Font-->
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -104,14 +109,14 @@
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Servicios </a>
+                  <a class="nav-link" href="#"> Servicios </a>
                   <ul>
 
                     <li class="nav-item active">
-                      <a class="nav-link" href="consultoriamk.html">Consultoria Mk</a>
+                      <a class="nav-link" href="consultoriamk.html">Marketing Digital</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="desarrolloweb.html">Desarrollo</a>
+                      <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
 
                     </li>
                     <!--<li>
@@ -332,12 +337,22 @@
     </div>
   </div>
 
+  <!--Modal para ampliar imégenes de carrousel-->
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+  </div>
+  <!--End modal-->
+
   <!--Portafolio2-->
 
   <div class="Carouselmk">
+
+    <!--
     <br>
 
-    <h2 style="font-family: monserrat, sans-serif;">Portafolio</h2>
+    <h2 style="font-family: Montserrat, sans-serif;">Portafolio</h2>
 
     <div class="slick-list" id="slick-list">
       <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
@@ -358,7 +373,7 @@
 
               <h4><small>Share Your Message</small>Watch</h4>
               <picture>
-                <img src="./images/images/1.jpg" alt="Image">
+                <img src="./images/images/ejemplo.jpeg" alt="Image">
               </picture>
             </a>
           </div>
@@ -370,7 +385,7 @@
 
               <h4><small>Share Your Message</small>Watch</h4>
               <picture>
-                <img src="./images/images/2.jpg" alt="Image">
+                <img src="./images/images/Duck.png" alt="Image">
               </picture>
             </a>
           </div>
@@ -542,15 +557,44 @@
           </path>
         </svg>
       </button>
-    </div>
+    </div> -->
 
     <br>
+
+    <div class="gallery-container clients">
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+      <div class="gallery">
+        <img src="images/images/1.jpg" alt="Imagen 1">
+        <img src="images/images/2.jpg" alt="Imagen 2">
+        <img src="images/images/3.jpg" alt="Imagen 3">
+        <img src="images/images/4.jpg" alt="Imagen 4">
+        <img src="images/images/5.jpg" alt="Imagen 5">
+        <img src="images/images/6.jpg" alt="Imagen 6">
+        <img src="images/images/7.jpg" alt="Imagen 7">
+        <img src="images/images/8.jpg" alt="Imagen 8">
+        <img src="images/CeroEs3.png" alt="Imagen 9">
+        <img src="images/imagen1.jpeg" alt="Imagen 10">
+        <img src="images/Flakos.png" alt="Imagen 11">
+        <img src="images/imagen2.jpeg" alt="Imagen 12">
+        <img src="images/imagen3.jpeg" alt="Imagen 13">
+        <img src="images/imagen4.jpeg" alt="Imagen 14">
+        <img src="images/images/1.jpg" alt="Imagen 15">
+      </div>
+    </div>
+  
+  <div id="imageModal" class="modal clientesMk">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
 
 
   </div>
   <script defer src="/js/carouselmk.js"></script>
-  <!--end Portafolio2-->
+  
+  <script defer src="/js/modalCarouselMk.js"></script>
 
+  <!--end Portafolio2-->
 
   <!-- footer section -->
   <section class="info_section layout_padding">
@@ -587,7 +631,7 @@
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="service.html">
+                <a style="font-size: 23px" href="#">
                   Servicios
                 </a>
               </li>

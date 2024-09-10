@@ -48,6 +48,11 @@
 
   <!--Icon-Font-->
   <script src="https://kit.fontawesome.com/c41cb6ddd6.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -98,14 +103,14 @@
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Servicios </a>
+                  <a class="nav-link" href="#"> Servicios </a>
                   <ul>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="consultoriamk.html">Consultoria Mk</a>
+                      <a class="nav-link" href="consultoriamk.html">Marketing Digital</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="desarrolloweb.html">Desarrollo</a>
+                      <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
 
                     </li>
                     <!--<li>
@@ -202,7 +207,7 @@
 
             <div class="row50">
               <div class="inputBox">
-                <span style="color: white;">Adjunta CV*: </span>
+                <span style="color: rgb(238, 234, 234);">Adjunta CV*: </span>
                 <input type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
               <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
             </div>
@@ -229,9 +234,19 @@
 
           <div class="row100">
             <div class="inputBox">
+              <label for="privacy-policy">
+                Acepto el <a href="URL_DOCUMENTO" target="_blank"> aviso de privacidad</a>
+              <input type="checkbox" id="privacy-policy" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="inputBox">
               <input type="submit" value="Enviar">
             </div>
           </div>
+
         </form>
         <br>
       <h3 style="color: #f0fbfc">* Campos obligatorios</h3>
@@ -312,7 +327,7 @@
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="service.html">
+                <a style="font-size: 23px" href="#">
                   Servicios
                 </a>
               </li>
