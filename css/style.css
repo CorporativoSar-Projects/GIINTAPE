@@ -141,7 +141,7 @@
 }
 
 .form {
-  grid-area: form;
+  height: auto;
 }
 
 .info {
@@ -606,7 +606,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 10px 50px;
+  padding: 10px 40px;
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -1037,6 +1037,10 @@ h7 {
   text-align: center;
 }
 
+.bannerabout h7 {
+  color: #FB8500; 
+}
+
 /*FIN BANNER ABOUT*/
 
 /*TEXT ABOUT*/
@@ -1070,6 +1074,7 @@ html {
   margin-bottom: 5px;
   color: #ffffff;
   text-align: center;
+  color: #FFB703 !important; 
 }
 
 .textabout p {
@@ -1099,6 +1104,15 @@ html {
   margin-right: 40px;
 }
 
+.textabout h7 {
+  
+  color: #FB8500 !important; 
+}
+
+.botonLeer {
+  background-color: #fb8500 !important;
+  color: white;
+}
 
 @media screen and (max-width:1150px) {
   .textabout {
@@ -1343,16 +1357,18 @@ html {
   width: 100%;
   background-color: #ffb703;
 }
+.Carouselmk h1{
+  text-align: center;
+  color: #000000;
+}
 .Carouselmk h2{
   font-size: 26px;
   line-height: 38px;
   padding-bottom: 24px;
   opacity: .9;
-  text-transform: uppercase;
   letter-spacing: 10px;
   text-align: center;
 }
-
 /* images */
 
 .slick-list{
@@ -1484,7 +1500,7 @@ html {
 
 /*portafolio desarrollo*/
 .containerweb{
-  width: 90%;
+  width: 70%;
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -1492,27 +1508,31 @@ html {
 }
 
 .sliderweb{
-  background-color: #f2f2f2;
   padding: 40px 0;
+  background-color: white !important;
 }
 
 .slider__containerweb{
-  display: grid;
+  /*display: grid;
   grid-template-columns: 50px 1fr 50px;
   align-items: center;
-  gap: 1em;
+  gap: 1em;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .slider__bodyweb{
-  grid-column: 2/3;
-  grid-row: 1/2;
-  opacity: 0;
-  pointer-events: none;
-  display: grid;
-  background-color: #f2f2f2;
-  grid-template-columns: 1fr max-content;
+
+  display: flex;
   align-items: center;
   transition: opacity 1.5s;
+  flex-direction: column;
+  text-align: center;
+  background-color: white !important;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .slider__body--showweb{
@@ -1521,7 +1541,30 @@ html {
 }
 
 .slider__textsweb{
-  max-width: 600px;
+  margin-bottom: 20px;
+}
+.slider__vidweb {
+  max-width: 100%;
+  height: auto; 
+}
+
+.clienteDesarrollo {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+
+.textoCliente {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.videoCliente {
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px; 
 }
 
 
@@ -1639,13 +1682,13 @@ html {
 .textabout a {
   display: inline-block;
   padding: 7px 0;
-  color: #186CC3;
+  color: white;
   text-decoration: none;
   width: 100px;
   text-align: center;
   border: 1px solid white;
   border-radius: 50px;
-  background: white;
+  background: #FB8500;
 }
 
 .textabout img {
@@ -2037,18 +2080,24 @@ background-color: #fff;
 }
 
 .slider__textsweb{
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .subtitleweb{
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #219EBC;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .slider__reviewweb{
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7;
+  color: #023047;
+  
 }
 
 .slider__vidweb{
@@ -2234,6 +2283,7 @@ background-color: #fff;
 .gallery_service>div:hover {
   flex: 5;
 }
+
 
 /* Fin css Galería*/
 
@@ -2949,8 +2999,15 @@ ul li {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
+  gap: 20px;
+  margin-left: 10%;
+}
+
+#Clientes{
+  filter: grayscale(100%);
+}
+#Clientes:hover{
+  filter: grayscale(0%);
 }
 
 .gallery img {
@@ -2961,6 +3018,13 @@ ul li {
   border-radius: 5px;
   display: block;
 }
+
+.containerClientes {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
 
 /*Estilos checkbox aviso de privacidad*/
 .inputBox label {
@@ -3106,3 +3170,119 @@ color: #023047;
   cursor: pointer;
 }
 /*fin slider clientes Mk*/
+
+/*Tabla Planes marketing*/
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #fb8500;
+}
+
+th, td {
+  border: 1px solid #fb8500;
+  padding: 12px;
+  text-align: center;
+  color: #000;
+  background-color: white;
+}
+
+th {
+  background-color: #fb8500;
+  color: white;
+  border: white;
+}
+
+tr{
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.oferta {
+  font-size: 24px;
+  color: #fb8500;
+  font-weight: bold;
+}
+
+.mes-gratis {
+  font-size: 32px;
+  color: #023047;
+  font-weight: bold;
+}
+
+.tituloTablaMarketing {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.PreciosMarketing th {
+  font-size: 26px;
+  font-weight: bold;
+
+}
+
+.PlanMasVendido {
+  color: #023047;
+  font-weight: bold;
+}
+
+.PreciosMarketing th.PrecioIdealMk,
+.PreciosMarketing td:nth-child(3) {
+  background-color: #FFB703;
+  color: rgb(5, 5, 5);
+}
+
+.PreciosMarketing th .descripcionPlanMk{
+    font-size: 14px;
+    color: #f4f4f4;
+    margin-top: 4px;
+    display: block;
+}
+
+.fila-botones {
+  border: none;
+}
+
+.fila-botones td {
+  border: none;
+  text-align: center;
+  padding: 16px;
+}
+
+.PreciosMarketing .celdaBlanca {
+  background-color: white !important; 
+}
+
+.btn-marketing {
+  background-color: #FB8500;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-marketing:hover {
+  color: #FB8500;
+  background-color: white;
+  border: 2px solid #FB8500;
+}
+/*Fin tabla planes Marketing*/
