@@ -213,6 +213,26 @@
           </div>
         
           <br>
+        
+          
+          <div class="row100">
+            <div class="inputBox">
+              <label for="privacy-policy">
+                Acepto el <a id="myBtn"> aviso de privacidad</a>
+              <input type="checkbox" id="privacy-policy" required>
+              </label>
+            </div>
+          </div>
+
+          <div id="privacyModal" class="modalAviso">
+          <div class="modal-content1">
+            <span class="closeAviso" id="privacyClose">&times;</span>
+            <h2>Aviso de privacidad de datos</h2>
+            <object data="\aviso.pdf" type="application/pdf" width="100%" height="400px">
+              <p>Da click <a href="\aviso.pdf" target="_blank">descargar aviso de privacidad</a>, para descargar nuestro aviso en PDF. Si quieres visualizarlo en línea, por favor abre este sitio web en tu computadora o tablet.</p>
+            </object>
+          </div>
+          </div>
 
           <div class="row100">
             <div class="inputBox">
@@ -394,7 +414,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/validation.js"></script>
-
+  <script src="js/modalPrivacyNotice.js"> </script>
 </body>
 
 </html>

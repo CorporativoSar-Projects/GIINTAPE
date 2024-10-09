@@ -144,6 +144,7 @@
 
 .info {
   grid-area: info;
+  height: 50%;
 }
 
 .map {
@@ -152,7 +153,7 @@
 
 .contact {
   padding: 40px;
-  background: #219ebc;
+  background: #023047;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -992,6 +993,7 @@ table th {
   background-color: transparent;
 }
 
+
 /*BANNER ABOUT*/
 h7 {
   font-weight: 700;
@@ -1001,11 +1003,12 @@ h7 {
 
 .bannerabout {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
-  background: center fixed url(../images/About.png);
+  background: url(../images/fondoGiintape.gif) center fixed;
+  background-size: cover;
 }
 
 .banner_descripcion {
@@ -1018,25 +1021,25 @@ h7 {
 .bannerabout a {
   display: inline-block;
   padding: 7px 0;
-  color: #186CC3;
+  color: #ffffffff !important;
   text-decoration: none;
   width: 150px;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50px;
-  background: white;
+  background-color: #023047 !important;
 }
 
 .banner_descripcion p{
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #00000000;
   text-align: center;
 }
 
 .bannerabout h7 {
-  color: #FB8500; 
+  color: #023047; 
 }
 
 /*FIN BANNER ABOUT*/
@@ -1054,7 +1057,9 @@ html {
   justify-content: space-evenly;
   padding: 0 40px;
   align-items: center;
-  background-color: #000000;
+  background: url('/images/fondoGiintape.gif') no-repeat center center fixed !important; 
+  background-size: cover !important;
+  color: #000 !important;
 }
 
 .textabout_descripcion{
@@ -1070,7 +1075,7 @@ html {
   font-size: 50px;
   font-weight: 500;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: #080808;
   text-align: center;
   color: #FFB703 !important; 
 }
@@ -1079,7 +1084,7 @@ html {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #000000 !important;
   text-align: justify;
 }
 
@@ -1595,7 +1600,7 @@ html {
 h7 {
   font-weight: 700;
   font-size: 4em;
-  color: #ffffff;
+  color: #00000000;
 }
 
 .bannerabout {
@@ -1604,7 +1609,10 @@ h7 {
   display: flex;
   align-items: center;
   text-align: center;
-  background: center fixed url(../images/About.png);
+  /*background: center fixed url(../images/About.png);*/
+  background: url('/images/fondoGiintape.gif') no-repeat center center fixed !important; 
+  background-size: cover !important;
+  color: #00000000 !important;
 }
 
 .banner_descripcion {
@@ -3037,6 +3045,46 @@ color: #023047;
 .inputBox a:hover {
   text-decoration: underline;
   color: white;
+}
+
+/* The Modal (background) */
+.modalAviso {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  vertical-align: middle !important;
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.closeAviso {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeAviso:hover,
+.closeAviso:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*Modal de imagen carrousel de Marketing*/
