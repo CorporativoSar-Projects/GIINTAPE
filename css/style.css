@@ -138,18 +138,23 @@
   font-weight: 600;
 }
 
+
 .form {
   height: auto;
+  grid-area: form;
 }
 
 .info {
   grid-area: info;
-  height: 50%;
+  height: auto;
+  background-color: #023047 !important;
 }
 
 .map {
   grid-area: map;
+  height: auto;
 }
+
 
 .contact {
   padding: 40px;
@@ -160,8 +165,8 @@
 .box {
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 5fr 4fr;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto;
   grid-template-areas:
     "form info"
     "form map";
@@ -1016,6 +1021,11 @@ h7 {
   max-width: 1000px;
   display: block;
   margin: auto;
+  
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .bannerabout a {
@@ -1039,8 +1049,9 @@ h7 {
 }
 
 .bannerabout h7 {
-  color: #023047; 
+  color: #023047;
 }
+
 
 /*FIN BANNER ABOUT*/
 
@@ -1077,7 +1088,8 @@ html {
   margin-bottom: 5px;
   color: #080808;
   text-align: center;
-  color: #FFB703 !important; 
+  color: black !important; 
+  border-radius: 10px;
 }
 
 .textabout p {
@@ -1086,6 +1098,8 @@ html {
   margin-bottom: 15px;
   color: #000000 !important;
   text-align: justify;
+  border-radius: 20px;
+
 }
 
 .textabout a {
@@ -1547,7 +1561,7 @@ html {
   margin-bottom: 20px;
 }
 .slider__vidweb {
-  max-width: 100%;
+  width: 70% !important;
   height: auto; 
 }
 
