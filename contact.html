@@ -139,16 +139,16 @@
       <div class="contact form">
         <h3>UNETE A NUESTRO EQUIPO DE TRABAJO</h3>
         <br>
-        <form id="contact-form" enctype="multipart/form-data">
+        <form id="contact-form" enctype="multipart/form-data" action="contact.php" method="post">
           <div class="formBox">
             <div class="row50">
               <div class="inputBox">
                 <span>Nombre(s)*:</span>
-                <input type="text" placeholder="Luis" required>
+                <input type="text" name="firstName" placeholder="Pablo" required>
               </div>
               <div class="inputBox">
                 <span>Apellidos*:</span>
-                <input type="text" placeholder="Sanchez" required>
+                <input type="text" name="lastName" placeholder="Zavala" required>
               </div>
             </div>
 
@@ -178,7 +178,7 @@
 
               <div class="inputBox">
                 <span>Situación Profesional*:</span>
-                <select name="SituacionProfecional" required>
+                <select name="SituacionProfesional" required>
                   <option value="Estudiante">Estudiante</option>
                   <option value="Pasante">Pasante</option>
                   <option value="egresado1">Egresado Sin Titulo</option>
@@ -232,15 +232,6 @@
               <p>Da click <a href="\aviso.pdf" target="_blank">descargar aviso de privacidad</a>, para descargar nuestro aviso en PDF. Si quieres visualizarlo en línea, por favor abre este sitio web en tu computadora o tablet.</p>
             </object>
           </div>
-          </div>
-
-          <div class="row100">
-            <div class="inputBox">
-              <label for="privacy-policy">
-                Acepto el <a href="URL_DOCUMENTO" target="_blank"> aviso de privacidad</a>
-              <input type="checkbox" id="privacy-policy" required>
-              </label>
-            </div>
           </div>
 
           <div class="row100">
@@ -415,6 +406,7 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/validation.js"></script>
   <script src="js/modalPrivacyNotice.js"> </script>
+  <script src="js/none.js"></script>
 </body>
 
 </html>
