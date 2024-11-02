@@ -1012,7 +1012,7 @@ h7 {
   display: flex;
   align-items: center;
   text-align: center;
-  background: url(../images/fondoGiintape.gif) center fixed;
+  background-image: url(../images/fondoGiintape.gif) center fixed;
   background-size: cover;
 }
 
@@ -3252,6 +3252,8 @@ th, td {
   text-align: center;
   color: #000;
   background-color: white;
+  font-size: 18px;
+  
 }
 
 th {
@@ -3305,6 +3307,17 @@ tr:hover {
   color: rgb(5, 5, 5);
 }
 
+.PreciosMarketing tr:last-child th.PrecioIdealMk,
+.PreciosMarketing tr:last-child td:nth-child(3) {
+  background-color: #FFFFFF; 
+  color: rgb(5, 5, 5); 
+}
+
+.PreciosMarketing tr:first-child th.PrecioIdealMk,
+.PreciosMarketing tr:first-child td:nth-child(3) {
+  background-color: #FFB703; 
+}
+
 .PreciosMarketing th .descripcionPlanMk{
     font-size: 14px;
     color: #f4f4f4;
@@ -3345,4 +3358,69 @@ tr:hover {
   background-color: white;
   border: 2px solid #FB8500;
 }
+
+.precio-row td {
+  font-size: 22px;
+}
 /*Fin tabla planes Marketing*/
+
+/*Inicia tabla Planes desarrollo web*/
+.tablePlanesDesarrollo {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.tablePlanesDesarrollo th {
+  background-color: #023047;
+  color: white;
+  padding: 10px;
+}
+
+.tablePlanesDesarrollo td {
+  background-color: white;
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+
+.fila-botonesDesarrollo {
+  border: none;
+}
+
+.fila-botonesDesarrollo td {
+  border: none;
+  text-align: center;
+  padding: 16px;
+}
+
+
+
+.btn-desarrollo {
+  background-color: #023047;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-desarrollo:hover {
+  color: #023047;
+  background-color: white;
+  border: 2px solid #023047;
+}
+
+.tablePlanesDesarrollo .planesDesarrollo td{
+  font-size: 22px;
+}
+
+/*Fin tabla Planes desarrollo web*/
