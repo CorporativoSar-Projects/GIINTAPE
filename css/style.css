@@ -1008,12 +1008,47 @@ h7 {
 
 .bannerabout {
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: url(../images/fondoGiintape.gif) center fixed;
-  background-size: cover;
+}
+
+#sec0.bannerabout {
+  background-image: url('../images/giintape.gif') !important;
+  background-size: cover;  
+  min-height: 500px;
+}
+
+#sec1.textabout {
+  background-color: #8ECAE6;
+  height: 100%;
+}
+
+#sec2.textabout {
+  background-color: #8ECAE6;
+  height: 100%;
+}
+
+#sec3.bannerabout {
+  background-image: url('../images/giintape.gif') !important;
+  background-size: cover;  
+  min-height: 500px;
+}
+
+#sec4.textabout {
+  background-color: white;
+  height: 100%;
+}
+
+#sec5.textabout {
+  background-color: white;
+  height: 100%;
+}
+
+#sec6.textabout {
+  background-color: white;
+  height: 100%;
 }
 
 .banner_descripcion {
@@ -1021,12 +1056,12 @@ h7 {
   max-width: 1000px;
   display: block;
   margin: auto;
-  
   background-color: white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 40px;
   border-radius: 10px;
 }
+
 
 .bannerabout a {
   display: inline-block;
@@ -1068,18 +1103,9 @@ html {
   justify-content: space-evenly;
   padding: 0 40px;
   align-items: center;
-  background: url('/images/fondoGiintape.gif') no-repeat center center fixed !important; 
-  background-size: cover !important;
-  color: #000 !important;
 }
 
-.textabout_descripcion{
-  height: auto;
-  width: 700px;
-  margin-left: 100px;
-  margin-right: 100px;
-  
-}
+
 
 .textabout h2 {
   position: center fixed;
@@ -1088,7 +1114,7 @@ html {
   margin-bottom: 5px;
   color: #080808;
   text-align: center;
-  color: black !important; 
+  color: black ; 
   border-radius: 10px;
 }
 
@@ -1096,23 +1122,12 @@ html {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #000000 !important;
+  color: #000000;
   text-align: justify;
   border-radius: 20px;
-
 }
 
-.textabout a {
-  display: inline-block;
-  padding: 7px 0;
-  color: #186CC3;
-  text-decoration: none;
-  width: 100px;
-  text-align: center;
-  border: 1px solid white;
-  border-radius: 50px;
-  background: white;
-}
+
 
 .textabout img {
   height: 50%;
@@ -1121,13 +1136,10 @@ html {
   margin-right: 40px;
 }
 
-.textabout h7 {
-  
-  color: #FB8500 !important; 
-}
+
 
 .botonLeer {
-  background-color: #fb8500 !important;
+  background-color: #023047 !important;
   color: white;
 }
 
@@ -1682,23 +1694,7 @@ html {
   
 }
 
-.textabout h2 {
-  position: center fixed;
-  font-size: 50px;
-  font-weight: 500;
-  margin-bottom: 5px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.textabout p {
-  position: center fixed;
-  font-weight: 300;
-  margin-bottom: 15px;
-  color: #ffffff;
-  text-align: justify;
-}
-
+/*Botones leer más*/
 .textabout a {
   display: inline-block;
   padding: 7px 0;
@@ -1708,16 +1704,8 @@ html {
   text-align: center;
   border: 1px solid white;
   border-radius: 50px;
-  background: #FB8500;
+  background: #023047;
 }
-
-.textabout img {
-  height: 50%;
-  width: 50%;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
 
 @media screen and (max-width:1150px) {
   .textabout {

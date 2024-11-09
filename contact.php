@@ -1,4 +1,5 @@
 <?php
+ 
   header('Content-Type: text/html; charset=utf-8');
   mb_internal_encoding('UTF-8');
   require("PHPMailer-master/src/PHPMailer.php");
@@ -9,9 +10,11 @@
   $inputEmail = utf8_encode($_POST['email']);
   $inputPhone = utf8_encode($_POST['telefono']);
   $areaOfInterest = utf8_encode($_POST['AreaDeInteres']);
-  $professionalSituation = utf8_encode($_POST['SituacionProfesional']);
+  $professionalSituation = utf8_encode($_POST['SituacionProfesional']) ;
   $typeOfService = utf8_encode($_POST['TipoDePrestacion']);
+  $workActually = isset($_POST['trabajo']) ? 'SI' : 'NO';
   $cv = $_FILES['cv'];
+  $correo=$_GET['c'];
   $mainEmail = "contacto@giintapeinnovahue.com";
 
   $subject = $firstName . " " . $lastName . " desea unirse a nuestro equipo.";
@@ -37,7 +40,8 @@
   <b>- Teléfono:</b> " . $inputPhone . "<br>
   <b>- Área de interés:</b> " . $areaOfInterest . "<br>
   <b>- Situación Profesional:</b> " . $professionalSituation . "<br>
-  <b>- Tipo de prestación:</b> " . $typeOfService . "</p>
+  <b>- Tipo de prestación:</b> " . $typeOfService . "<br>
+  <b>- ¿Trabaja actualmente?:</b> " . $workActually . "</p>
   <p>Por favor, contacta a este candidato para poder agendar una primera entrevista.</p>
   <p style='font-size: 8pt;'><em>* Correo enviado a través del sitio web corporativo. No respondas a este correo.</em></p>");
 
@@ -50,20 +54,30 @@
   if(isset($cv) && $cv['error'] == 0) {
     $mail->AddAttachment($cv['tmp_name'], $cv['name']);
   }
+  if($correo==1){
+    if ($mail->Send()) {
+      
+      $firstName = "";
+      $lastName = "";
+      $inputEmail = "";
+      $inputPhone = "";
+      $areaOfInterest = "";
+      $professionalSituation = "";
+      $typeOfService = "";
+      $workActually= "";
+      $correo=0;
+      require_once("contact.html?c=0");
 
-  if ($mail->Send()) {
-    require("modalTest.php");
+      require("modalTest.php");
+    }
+    else
+    {
+      /*var m=document.getElementById('alertSuccess');m.style.setProperty('display','block','important');*/
+    }
+    
+
+  }else{
+
   }
-  else
-  {
-    /*var m=document.getElementById('alertSuccess');m.style.setProperty('display','block','important');*/
-  }
-  $firstName = "";
-  $lastName = "";
-  $inputEmail = "";
-  $inputPhone = "";
-  $areaOfInterest = "";
-  $professionalSituation = "";
-  $typeOfService = "";
-include('contact.html');
+
 ?>

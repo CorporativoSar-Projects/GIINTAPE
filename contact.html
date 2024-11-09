@@ -97,13 +97,16 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
+                <!--
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link"> Servicios </a>
-                  <ul>
+                -->
 
+                <!--
+                <li class="nav-item">
+                  <a class="nav-link">Servicios </a>
+                  <ul>
                     <li class="nav-item">
                       <a class="nav-link" href="consultoriamk.html">Marketing Digital</a>
                     </li>
@@ -111,8 +114,8 @@
                       <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
                     </li>
                   </ul>
-
                 </li>
+                -->
                 <li class="nav-item">
                   <a class="nav-link" href="https://giintapeinnovahue.freshdesk.com/support/home" target="_blank">Soporte técnico</a>
                 </li>
@@ -139,7 +142,7 @@
       <div class="contact form">
         <h3>UNETE A NUESTRO EQUIPO DE TRABAJO</h3>
         <br>
-        <form id="contact-form" enctype="multipart/form-data" action="contact.php" method="post">
+        <form id="contact-form" enctype="multipart/form-data" action="contact.php?c=1" method="post">
           <div class="formBox">
             <div class="row50">
               <div class="inputBox">
@@ -204,10 +207,11 @@
                 <input type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
               <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
             </div>
+
               <div class="inputBox">
                 <span style="color: white;">¿Trabajas actualmente?: </span>
-                <input type="checkbox" class="toggle" id="check">
-                <label for="check" data-checked="SI" class="check" data-unchecked="NO"></label>
+                <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
+                <label for="check" data-checked="Si" class="check" data-unchecked="No"></label>
               </div>
             </div>
           </div>
@@ -268,7 +272,7 @@
           <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
           <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
           <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+          <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
         </ul>
       </div>
     </div>
@@ -314,6 +318,8 @@
                   Inicio
                 </a>
               </li>
+
+              <!--
               <li>
                 <a style="font-size: 23px" href="about.html">
                   Informaci&oacute;n
@@ -329,6 +335,7 @@
                   Desarrollo de Software
                 </a>
               </li>
+              -->
               <li>
                 <a style="font-size: 23px;" href="https://giintapeinnovahue.freshdesk.com/support/home">
                   Soporte técnico
