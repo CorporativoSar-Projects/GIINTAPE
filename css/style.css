@@ -1015,10 +1015,27 @@ h7 {
 }
 
 #sec0.bannerabout {
-  background-image: url('../images/giintape.gif') !important;
+  /*background-image: url('../images/giintape.gif') !important;
   background-size: cover;  
+  min-height: 500px;*/
+  position: relative;
+  width: 100%;
   min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
 }
+#video_background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+  }
 
 #sec1.textabout {
   background-color: #8ECAE6;
@@ -1031,9 +1048,17 @@ h7 {
 }
 
 #sec3.bannerabout {
-  background-image: url('../images/giintape.gif') !important;
+  /*background-image: url('../images/giintape.gif') !important;
   background-size: cover;  
+  min-height: 500px;*/
+  position: relative;
+  width: 100%;
   min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
 }
 
 #sec4.textabout {
@@ -1052,6 +1077,8 @@ h7 {
 }
 
 .banner_descripcion {
+  position: relative;
+  z-index: 1; 
   width: 90%;
   max-width: 1000px;
   display: block;
@@ -1082,6 +1109,7 @@ h7 {
   color: #00000000;
   text-align: center;
 }
+
 
 .bannerabout h7 {
   color: #023047;
@@ -1635,18 +1663,12 @@ h7 {
   display: flex;
   align-items: center;
   text-align: center;
-  /*background: center fixed url(../images/About.png);*/
-  background: url('/images/fondoGiintape.gif') no-repeat center center fixed !important; 
+  /*background: url('/images/fondoGiintape.gif') no-repeat center center fixed !important; */
   background-size: cover !important;
   color: #00000000 !important;
 }
 
-.banner_descripcion {
-  width: 90%;
-  max-width: 1000px;
-  display: block;
-  margin: auto;
-}
+
 
 .bannerabout a {
   display: inline-block;
@@ -1660,13 +1682,8 @@ h7 {
   background: white;
 }
 
-.banner_descripcion p{
-  position: center fixed;
-  font-weight: 300;
-  margin-bottom: 15px;
-  color: #ffffff;
-  text-align: center;
-}
+
+
 
 /*FIN BANNER ABOUT*/
 
