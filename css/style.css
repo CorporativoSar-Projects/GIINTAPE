@@ -124,6 +124,8 @@
   position: relative;
   width: 100%;
   padding: 40px 100px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .contactUs .titlecontac {
@@ -238,6 +240,7 @@
   visibility: hidden;
   opacity: 0;
   z-index: -1;
+  padding: 1000px;
 }
 
 .contenedor-btn-file {
@@ -407,6 +410,7 @@ input[type=checkbox].toggle:checked+label:before {
   margin-bottom: 10px;
 }
 
+
 .info .infoBox div span {
   min-width: 40px;
   height: 40px;
@@ -460,45 +464,6 @@ input[type=checkbox].toggle:checked+label:before {
   height: 100%;
 }
 
-/*Responsive dessing*/
-@media (max-width: 991px) {
-  .contactUs {
-    padding: 20px;
-  }
-
-  .box {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "form"
-      "info"
-      "map";
-  }
-
-  .formBox .row50 {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-  }
-
-  .inputBox {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .contact {
-    padding: 30px;
-    width: auto !important;
-  }
-
-  .map {
-    width: auto !important;
-    min-height: 300px;
-    padding: 0;
-  }
-}
-
 /*End Secciion Contacto*/
 
 body {
@@ -506,19 +471,6 @@ body {
   background-color: #ffffff;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .body {
-    font-size: 15px !important;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .btn-wsp {
-    width: 63px;
-    height: 63px;
-    line-height: 66px;
-  }
-}
 
 .layout_padding {
   padding: 75px 0;
@@ -766,10 +718,7 @@ header ul li ul li {
     width: 100%;
     left: 0;
   }
-
-
 }
-
 
 
 /* Margen Galería de fotos*/
@@ -3428,3 +3377,7 @@ tr:hover {
 }
 
 /*Fin tabla Planes desarrollo web*/
+
+input select{
+  width: 100% !important;
+}

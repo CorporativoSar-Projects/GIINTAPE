@@ -14,9 +14,9 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta name="keywords" content="marketing digital, desarrollo de software, páginas web, aplicaciones web, chatbot, redes sociales, tecnología, Microsoft 365, soporte técnico, Talento, Prácticas, Servicio social, Empleo, Empleo TI, CDMX, Ciudad de México, México, chatbot reclutamiento, reclutamiento, inteligencia artificial, ia, IA, AI, capacitación en microsoft 365, tecnologías microsoft" />
+  <meta name="description" content="Expertos en Marketing Digital, Desarrollo de Software y Capacitación en Microsoft 365. Soluciones tecnológicas innovadoras para tu negocio." />
+  <meta name="author" content="GIINTAPE INNOVHAUE" />
 
   <title>Contacto</title>
   <link rel="shortcut icon" href="icon/logogiintape.png">
@@ -52,6 +52,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<style>
+    select{
+        width: 90%;
+        max-width: 90%;
+        box-sizing: border-box;
+        border:0px solid yellow !important;
+    }
+</style>
 
 <body>
   <!--Barra Redes-->
@@ -136,155 +144,127 @@
     <div class="titlecontac">
       <h2>TALENTO INNOVAHUE</h2>
     </div>
-    <div class="box">
+   <!--Formulario-->
+   <div class="contact form">
+    <center>
+    <h3>¡ÚNETE A NUESTRO EQUIPO!</h3>
+    </center> 
+    <br>
+    <form id="contact-form" enctype="multipart/form-data" action="contact.php?c=1" method="post">
+      <div class="formBox">
+        <div class="row50">
+          <div class="inputBox">
+            <span>Nombre(s)*:</span>
+            <input type="text" name="firstName" placeholder="Pablo" style="width:90%;" required>
+          </div>
+          <div class="inputBox">
+            <span>Apellido(s)*:</span>
+            <input type="text" name="lastName" placeholder="Villar" style="width:90%;" required>
+          </div>
+        </div>
 
-      <!--Formulario-->
-      <div class="contact form">
-        <h3>UNETE A NUESTRO EQUIPO DE TRABAJO</h3>
-        <br>
-        <form id="contact-form" enctype="multipart/form-data" action="contact.php?c=1" method="post">
-          <div class="formBox">
-            <div class="row50">
-              <div class="inputBox">
-                <span>Nombre(s)*:</span>
-                <input type="text" name="firstName" placeholder="Pablo" required>
-              </div>
-              <div class="inputBox">
-                <span>Apellidos*:</span>
-                <input type="text" name="lastName" placeholder="Zavala" required>
-              </div>
-            </div>
+        <div class="row50">
+          <div class="inputBox">
+            <span>Correo*:</span>
+            <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" style="width:90%;" required>
+          </div>
+          <div class="inputBox">
+            <span>Teléfono*:</span>
+            <input type="tel" id="telefono" name="telefono" placeholder="+52 55 4870 0229" style="width:90%;" required>
+          </div>
+        </div>
 
-            <div class="row50">
-              <div class="inputBox">
-                <span>Correo*:</span>
-                <input type="email" name="email" id="email" placeholder="Correo@ejemplo.com" required>
-              </div>
-              <div class="inputBox">
-                <span>Teléfono*:</span>
-                <input type="tel" id="telefono" name="telefono" placeholder="(+52)55 123 456 78" required>
-              </div>
-            </div>
-
-            <div class="row50">
-              <div class="inputBox">
-                <span>Área de interés*:</span>
-                <select name="AreaDeInteres" required>
-                  <option value="Marketing">Marketing y ventas</option>
-                  <option value="Desarrollo">Desarrollo de software</option>
-                  <option value="Desarrollo">Talento Humano</option>
-                  <option value="Legal">Legal</option>
-                  <option value="Contabilidad">Contabilidad</option>
-                  <option value="Operaciones">Operaciones</option>
-                </select>
-              </div>
-
-              <div class="inputBox">
-                <span>Situación Profesional*:</span>
-                <select name="SituacionProfesional" required>
-                  <option value="Estudiante">Estudiante</option>
-                  <option value="Pasante">Pasante</option>
-                  <option value="egresado1">Egresado Sin Titulo</option>
-                  <option value="egresado2">Egresado Con Titulo</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="row50">
-              <div class="inputBox">
-                  <span>Tipo de prestación*:</span>
-                  <select name="TipoDePrestacion" required>
-                      <option value="ServicioSocial">Servicio Social</option>
-                      <option value="PracticasProfesionales">Prácticas Profesionales</option>
-                      <option value="Voluntariado">Voluntariado</option>
-                  </select>
-              </div>
+        <div class="row50">
+          <div class="inputBox">
+            <span>Área de interés*:</span>
+            <select name="AreaDeInteres" required>
+              <option value="Marketing digital">Marketing digital</option>
+              <option value="Ventas">Ventas</option>
+              <option value="Desarrollo de software">Desarrollo de software</option>
+              <option value="Soporte y asistencia técnica de TI">Soporte y asistencia técnica de TI</option>
+              <option value="Recursos Humanos">Recursos humanos</option>
+              <option value="Legal">Legal</option>
+              <option value="Contabilidad y finanzas">Contabilidad y finanzas</option>
+              <option value="Gestión o administración empresarial">Gestión o administración empresarial</option>
+            </select>
           </div>
 
-            <div class="row50">
-              <div class="inputBox">
-                <span style="color: rgb(238, 234, 234);">Adjunta CV*: </span>
-                <input type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
-              <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
-            </div>
-
-              <div class="inputBox">
-                <span style="color: white;">¿Trabajas actualmente?: </span>
-                <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
-                <label for="check" data-checked="Si" class="check" data-unchecked="No"></label>
-              </div>
-            </div>
+          <div class="inputBox">
+            <span>Situación profesional*:</span>
+            <select name="SituacionProfesional" required >
+              <option value="Estudiante">Estudiante</option>
+              <option value="Recién egresado">Recién egresado</option>
+              <option value="Pasante">Pasante</option>
+              <option value="Egresado titulado">Egresado titulado</option>
+            </select>
           </div>
-        
-          <br>
-        
+        </div>
+
+        <div class="row50">
+          <div class="inputBox">
+              <span>Tipo de prestación que buscas*:</span>
+              <select name="TipoDePrestacion" required>
+                  <option value="Servicio social">Servicio social</option>
+                  <option value="Prácticas profesionales">Prácticas profesionales</option>
+                  <option value="Voluntariado">Voluntariado</option>
+                  <option value="Otra prestación">Otra</option>
+              </select>
+          </div>
+
+          <div id="checJobCurrent" class="inputBox">
+            <span style="color: white;">¿Trabajas actualmente?: </span>
+            <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
+            <label id="labelJobCurrent" for="check" data-checked="Si" class="check" data-unchecked="No"></label>
+          </div>
+
           
-          <div class="row100">
-            <div class="inputBox">
-              <label for="privacy-policy">
-                Acepto el <a id="myBtn"> aviso de privacidad</a>
-              <input type="checkbox" id="privacy-policy" required>
-              </label>
-            </div>
-          </div>
-
-          <div id="privacyModal" class="modalAviso">
-          <div class="modal-content1">
-            <span class="closeAviso" id="privacyClose">&times;</span>
-            <h2>Aviso de privacidad de datos</h2>
-            <object data="\aviso.pdf" type="application/pdf" width="100%" height="400px">
-              <p>Da click <a href="\aviso.pdf" target="_blank">descargar aviso de privacidad</a>, para descargar nuestro aviso en PDF. Si quieres visualizarlo en línea, por favor abre este sitio web en tu computadora o tablet.</p>
-            </object>
-          </div>
-          </div>
-
-          <div class="row100">
-            <div class="inputBox">
-              <input type="submit" value="Enviar">
-            </div>
-          </div>
-
-        </form>
-        <br>
-      <h3 style="color: #f0fbfc">* Campos obligatorios</h3>
+        </div>
+        <div class="row50">
+          <div class="inputBox">
+            <span style="color: rgb(238, 234, 234);">Adjunta tu CV*: </span>
+            <input style="font-size:  10px;" type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
+          <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
+        </div>
+        </div>
+      </div>
+    
+      <br>
+    
+      
+      <div class="row100">
+        <div class="inputBox">
+          <label for="privacy-policy">
+            Acepto el <a id="myBtn" style="color:#6c8df8;"><u>aviso de privacidad</u></a>
+          <input type="checkbox" id="privacy-policy" required>
+          </label>
+        </div>
       </div>
 
-    <!--Informacion-->
-    <div class="contact info">
-      <h3>Contacto</h3>
-      <div class="infoBox">
-        <div>
-          <span><ion-icon name="location"></ion-icon></span>
-          <p>Río Guadiana 31, Col. Cuauhtémoc
-            <br>Cuauhtémoc, 06500, CDMX.
-          </p>
-        </div>
-        <div>
-          <span><ion-icon name="mail"></ion-icon></span>
-          <a href="mailto:contacto@giintapeinnovahue.com">contacto@giintapeinnovahue.com</a>
-        </div>
-        <div>
-          <span><ion-icon name="call"></ion-icon></span>
-          <a href="tel:+525653975314">(+52)56 5397 5314</a>
-        </div>
-        <!--Links Redes Sociales-->
-        <ul class="sci">
-          <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
-        </ul>
+      <div id="privacyModal" class="modalAviso">
+      <div class="modal-content1">
+        <span class="closeAviso" id="privacyClose">&times;</span>
+        <h2>Aviso de privacidad de datos</h2>
+        <object data="\aviso.pdf" type="application/pdf" width="100%" height="400px">
+          <p>Da click <a href="\aviso.pdf" target="_blank">descargar aviso de privacidad</a>, para descargar nuestro aviso en PDF. Si quieres visualizarlo en línea, por favor abre este sitio web en tu computadora o tablet.</p>
+        </object>
       </div>
-    </div>
+      </div>
 
+      <div class="row100">
+        <div class="inputBox">
+          <input type="submit" style="border:1px solid white;" value="Enviar">
+        </div>
+      </div>
 
-    <!--Mapa-->
-    <div class="contact map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6466936793603!2d-99.16331893035856!3d19.430252298865568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff34991fe123%3A0xde712c60692aefd4!2sR%C3%ADo%20Guadiana%2031%2C%20Col.%20Renacimiento%2C%20Cuauht%C3%A9moc%2C%2006500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1706825220453!5m2!1ses-419!2smx"
-        style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    </form>
+    <br>
   </div>
+<!--Mapa-->
+<div class="">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6466936793603!2d-99.16331893035856!3d19.430252298865568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff34991fe123%3A0xde712c60692aefd4!2sR%C3%ADo%20Guadiana%2031%2C%20Col.%20Renacimiento%2C%20Cuauht%C3%A9moc%2C%2006500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1706825220453!5m2!1ses-419!2smx"
+    style="border:0 !important;" width="100%" height="400px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
   </div>
   <!--End Contact section-->
 
@@ -303,7 +283,7 @@
               GIINTAPE INNOVAHUE
             </h2>
             <p>
-              GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
+              GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
             </p>
           </div>
         </div>
@@ -358,7 +338,7 @@
               <h6 style="font-size: 20px; color: white;">
                 Nuestras Oficinas:
               </h6>
-              <a href="">
+              <a href="https://maps.app.goo.gl/rjm6zeSu2Z2jMfmP9" target="_blank">
                 <img src="images/location.png" alt="">
                 <span style="font-size: 16px;">
                   Río Guadiana 31, Cuauhtémoc, Cuauhtémoc, 06500, CDMX
@@ -369,7 +349,7 @@
               <h6 style="font-size: 20px; color: white;">
                 Tel&eacute;fono:
               </h6>
-              <a href="">
+              <a>
                 <img src="images/telephone.png" alt="">
                 <span style="font-size: 16px;">
                   (+52)56 5397 5314
@@ -381,7 +361,7 @@
               <h6 style="font-size: 20px; color: white;">
                 Correo:
               </h6>
-              <a href="">
+              <a href="mailto:contacto@giintapeinnovahue.com" target="_blank">
                 <img src="images/telephone.png" alt="">
                 <span style="font-size: 16px;">
                   contacto@giintapeinnovahue.com
@@ -392,7 +372,7 @@
               <h6 style="font-size: 20px; color: white;">
                 Horario:
               </h6>
-              <a href="">
+              <a>
                 <img src="images/time.png" alt="">
                 <span style="font-size: 16px;">
                   Lunes a viernes de 9 a 18 hrs.
@@ -400,6 +380,13 @@
               </a>
             </div>
           </div>
+          <!--Links Redes Sociales-->
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
+          </ul>
         </div>
       </div>
     </div>
@@ -409,11 +396,14 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/validation.js"></script>
   <script src="js/modalPrivacyNotice.js"> </script>
-  <script src="js/none.js"></script>
+  <script src="js/none.js"> </script>
+
+  <!--Iconos redes sociales footer-->
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
