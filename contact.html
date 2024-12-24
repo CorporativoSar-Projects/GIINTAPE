@@ -51,6 +51,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var vacancyObject = {
+                "Marketing Digital": [
+                    "Consultor Trainee en Marketing Digital y Ventas",
+                    "Creador de contenido",
+                    "Social Media Manager"
+                ],
+                "Tecnologías de la Información": [
+                    "Asistente de Mesa de Soporte de TI",
+                    "Consultor Trainee en Microsoft 365",
+                    "Desarrollador Web Front-End",
+                    "Desarrollador Web Back-End"
+                ],
+                "Talento Humano": [
+                    "Analista de Atracción de Talento",
+                    "Analista de Desarrollo Organizacional",
+                    "Generalista de Recursos Humanos"
+                ],
+                "Gestión/Administración Empresarial": [
+                    "Asistente Directivo",
+                    "Asistente de Operaciones"
+                ],
+                "Derecho Corporativo": [
+                    "Asistente Legal Corporativo"
+                ],
+                "Ventas": [
+                    "Ejecutivo de cuenta"
+                ],
+                "Contabilidad y finanzas": [
+                    "Sin vacantes por ahora"
+                ],
+            };
+
+            var areaSel = document.getElementById("areaInteresSel");
+            var vacaSel = document.getElementById("vacanteInteresSel");
+
+            // Llenar el primer desplegable con las áreas de interés
+            for (var area in vacancyObject) {
+                areaSel.options[areaSel.options.length] = new Option(area, area);
+            }
+
+            // Vincular el cambio en el primer desplegable con la actualización del segundo
+            areaSel.addEventListener("change", function() {
+                vacaSel.length = 1; // Limpiar las opciones del segundo desplegable, excepto la opción predeterminada
+                if (this.value !== "") {
+                    var vacantes = vacancyObject[this.value];
+                    for (var i = 0; i < vacantes.length; i++) {
+                        vacaSel.options[vacaSel.options.length] = new Option(vacantes[i], vacantes[i]);
+                    }
+                }
+            });
+        });
+    </script>
+
 </head>
 <style>
     select{
@@ -60,7 +115,6 @@
         border:0px solid yellow !important;
     }
 </style>
-
 <body>
   <!--Barra Redes-->
   <div class="container-bar">
@@ -177,18 +231,19 @@
         <div class="row50">
           <div class="inputBox">
             <span>Área de interés*:</span>
-            <select name="AreaDeInteres" required>
-              <option value="Marketing digital">Marketing digital</option>
-              <option value="Ventas">Ventas</option>
-              <option value="Desarrollo de software">Desarrollo de software</option>
-              <option value="Soporte y asistencia técnica de TI">Soporte y asistencia técnica de TI</option>
-              <option value="Recursos Humanos">Recursos humanos</option>
-              <option value="Legal">Legal</option>
-              <option value="Contabilidad y finanzas">Contabilidad y finanzas</option>
-              <option value="Gestión o administración empresarial">Gestión o administración empresarial</option>
+            <select id="areaInteresSel" name="AreaDeInteres" required>
+              <option value="">Sin selección</option>
             </select>
           </div>
-
+          <div class="inputBox">
+            <span>Vacante de interés*:</span>
+            <select id="vacanteInteresSel" name="VacanteDeInteres" required>
+              <option value="">Sin selección</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="row50">
           <div class="inputBox">
             <span>Situación profesional*:</span>
             <select name="SituacionProfesional" required >
@@ -198,9 +253,6 @@
               <option value="Egresado titulado">Egresado titulado</option>
             </select>
           </div>
-        </div>
-
-        <div class="row50">
           <div class="inputBox">
               <span>Tipo de prestación que buscas*:</span>
               <select name="TipoDePrestacion" required>
@@ -210,27 +262,21 @@
                   <option value="Otra prestación">Otra</option>
               </select>
           </div>
-
-          <div id="checJobCurrent" class="inputBox">
-            <span style="color: white;">¿Trabajas actualmente?: </span>
-            <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
-            <label id="labelJobCurrent" for="check" data-checked="Si" class="check" data-unchecked="No"></label>
-          </div>
-
-          
         </div>
+        
         <div class="row50">
           <div class="inputBox">
             <span style="color: rgb(238, 234, 234);">Adjunta tu CV*: </span>
             <input style="font-size:  10px;" type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
-          <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
+            <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
+          </div>
+          <div id="checJobCurrent" class="inputBox">
+            <span style="color: white;">¿Trabajas actualmente?:</span>
+            <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
+            <label id="labelJobCurrent" for="check" data-checked="Si" class="check" data-unchecked="No"></label>
+          </div>
         </div>
-        </div>
-      </div>
-    
       <br>
-    
-      
       <div class="row100">
         <div class="inputBox">
           <label for="privacy-policy">
@@ -255,7 +301,7 @@
           <input type="submit" style="border:1px solid white;" value="Enviar">
         </div>
       </div>
-
+     </div>
     </form>
     <br>
   </div>

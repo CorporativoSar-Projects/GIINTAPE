@@ -5,6 +5,7 @@
   require("PHPMailer-master/src/SMTP.php");
   $etiquetaTel = utf8_encode("Teléfono");
   $etiquetaArea = utf8_encode("Área de interés");
+  $etiquetaVacante = utf8_encode("Vacante de interés");
   $etiquetaSituacion = utf8_encode("Situación profesional");
   $etiquetaTrabaja = utf8_encode("¿Trabaja actualmente?");
   $etiquetaTipo = utf8_encode("Tipo de prestación");
@@ -13,6 +14,7 @@
   $inputEmail = utf8_encode($_POST['email']);
   $inputPhone = utf8_encode($_POST['telefono']);
   $areaOfInterest = utf8_encode($_POST['AreaDeInteres']);
+  $vacancyOfInterest = utf8_encode($_POST['VacanteDeInteres']);
   $professionalSituation = utf8_encode($_POST['SituacionProfesional']) ;
   $typeOfService = utf8_encode($_POST['TipoDePrestacion']);
   $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
@@ -42,6 +44,7 @@
   <b>- Correo:</b> " . $inputEmail . "<br>
   <b>- ".$etiquetaTel.":</b> " . $inputPhone . "<br>
   <b>- ".$etiquetaArea.":</b> " . $areaOfInterest . "<br>
+  <b>- ".$etiquetaVacante.":</b> " . $vacancyOfInterest . "<br>
   <b>- ".$etiquetaSituacion.":</b> " . $professionalSituation . "<br>
   <b>- ".$etiquetaTipo.":</b> " . $typeOfService . "<br>
   <b>- ".$etiquetaTrabaja.":</b> " . $workActually . "</p>
@@ -65,6 +68,7 @@
       $inputEmail = "";
       $inputPhone = "";
       $areaOfInterest = "";
+      $vacancyOfInterest = "";
       $professionalSituation = "";
       $typeOfService = "";
       $workActually= "";
