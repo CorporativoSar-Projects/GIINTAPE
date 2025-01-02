@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PK0MJ379N5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PK0MJ379N5');
+    </script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Modal</title>
@@ -60,7 +68,7 @@
 	}
 </style>
 <body>
-<img src="images/company.jpg" width="100%"/>
+<img src="images/company.jpg" width="100%" alt="vacantes giintape innovahue vacantes de tecnologia marketing recursos humanos en cdmx homeoffice"/>
 	  <!-- Modal -->
 <div id="id01" class="w3-modal" style="margin-top:0 !important;">
       <div class="w3-modal-content">
@@ -100,12 +108,12 @@
 
 
 
- <!-- footer section -->
- <section class="info_section layout_padding">
+  <!-- footer section -->
+  <section class="info_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="images/logogiintape.png" width="200" height="200">
+          <img src="images/logogiintape.png" width="200" height="200" alt="Giintape innovahue agencia de publicidad cdmx">
           <br>
           <br>
           <div class="info-logo">
@@ -168,8 +176,8 @@
               <h6 style="font-size: 20px; color: white;">
                 Nuestras Oficinas:
               </h6>
-              <a href="https://maps.app.goo.gl/rjm6zeSu2Z2jMfmP9" target="_blank">
-                <img src="images/location.png" alt="">
+              <a href="">
+                <img src="images/location.png" alt="giintape innovahue publicidad en redes sociales cdmx">
                 <span style="font-size: 16px;">
                   Río Guadiana 31, Cuauhtémoc, Cuauhtémoc, 06500, CDMX
                 </span>
@@ -179,8 +187,8 @@
               <h6 style="font-size: 20px; color: white;">
                 Tel&eacute;fono:
               </h6>
-              <a>
-                <img src="images/telephone.png" alt="">
+              <a href="">
+                <img src="images/telephone.png" alt="whatsapp giintape innovahue marketing en redes sociales cdmx">
                 <span style="font-size: 16px;">
                   (+52)56 5397 5314
                 </span>
@@ -191,8 +199,8 @@
               <h6 style="font-size: 20px; color: white;">
                 Correo:
               </h6>
-              <a href="mailto:contacto@giintapeinnovahue.com" target="_blank">
-                <img src="images/telephone.png" alt="">
+              <a href="">
+                <img src="images/telephone.png" alt="correo giintape innovahue marketing en redes sociales cdmx">
                 <span style="font-size: 16px;">
                   contacto@giintapeinnovahue.com
                 </span>
@@ -202,30 +210,29 @@
               <h6 style="font-size: 20px; color: white;">
                 Horario:
               </h6>
-              <a>
-                <img src="images/time.png" alt="">
+              <a href="">
+                <img src="images/time.png" alt="horario giintape innovahue marketing en redes sociales cdmx">
                 <span style="font-size: 16px;">
                   Lunes a viernes de 9 a 18 hrs.
                 </span><br>
               </a>
             </div>
           </div>
-          <!--Links Redes Sociales-->
-          <ul class="sci">
-            <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
-          </ul>
+		  <!--Links Redes Sociales-->
+		  <ul class="sci">
+          <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
+        </ul>
         </div>
       </div>
     </div>
   </section>
   <!-- end footer section -->
-   <!--Iconos redes sociales footer-->
+  <!--Iconos redes sociales footer-->
   
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
