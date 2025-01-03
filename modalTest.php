@@ -200,7 +200,7 @@
                 Correo:
               </h6>
               <a href="">
-                <img src="images/telephone.png" alt="correo giintape innovahue marketing en redes sociales cdmx">
+                <img src="images/email_icon_giin.png" alt="correo giintape innovahue marketing en redes sociales cdmx">
                 <span style="font-size: 16px;">
                   contacto@giintapeinnovahue.com
                 </span>
