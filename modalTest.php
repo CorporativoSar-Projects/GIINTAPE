@@ -105,9 +105,6 @@
     </div>
   </div>
   <!--End Barra Redes-->
-
-
-
   <!-- footer section -->
   <section class="info_section layout_padding">
     <div class="container">
@@ -231,7 +228,6 @@
   </section>
   <!-- end footer section -->
   <!--Iconos redes sociales footer-->
-  
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
