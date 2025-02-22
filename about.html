@@ -41,8 +41,14 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!--Type Effect-->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/about.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
@@ -51,6 +57,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body id="about-page">
@@ -137,14 +144,38 @@
     </video>
 
     <div class="banner_descripcion">
-      <h7>SOBRE NOSOTROS</h7>
+      <h1>SOBRE NOSOTROS</h1>
       <br>
-      <a href="#sec1" class="botonLeer">Leer Información</a>
+      <div class="div-type">
+        <p id="typewriter"></p>
+      </div>     
+      <a href="#sec1" class="btn-mas-informacion">Leer Información</a>
     </div>
+    <!--Script Slogan-->
+    <script>
+      let app = document.getElementById('typewriter');
+
+      let typewriter = new Typewriter(app, {
+          loop: true,
+          delay: 75,
+          cursor: "<span class='slogan-cursor'>|</span>",
+      });
+
+      typewriter
+          .pauseFor(1500)
+          .typeString('<span class="slogan">"Trabajemos juntos, crezcamos juntos"</span>')
+          .pauseFor(1000)
+          .deleteAll(50)
+          .start();
+  </script>
+
+    
+  
   </div>
+  
   <div class="textabout" id="sec1">
     <div class="textabout_descripcion">
-      <h2 class="titleAbout">Misión</h2>
+      <h2 class="titleAbout subtitleabout">Misión</h2>
       
       <p>Somos una empresa dedicada a ayudar a las
         MiPyMEs y negocios del país a establecer y
@@ -154,13 +185,13 @@
         negocio.</p>
       <center><a href="#sec2">Leer Más</a></center>
     </div>
-    <img src="images/MisionProv.svg">
+    <img src="images/basicos/MisionGin.png">
   </div>
 
   <div class="textabout" id="sec2">
-    <img src="images/VisionProv.svg">
+    <img src="images/basicos/VisionGin.png">
     <div class="textabout_descripcion">
-      <h2>Visión</h2>
+      <h2 class="subtitleabout">Visión</h2>
       <br>
       <p>Ser reconocida como una de las principales
         empresas mexicanas en ofrecer capacitación
@@ -181,12 +212,13 @@
     </video>
     
     <div class="banner_descripcion">
-      <h7>Nuestra preparación y experiencia</h7>
+      <h1>Nuestra preparación y experiencia</h1>
       <br>
-      <a href="#sec4">Leer Información</a></center>
+      <a href="#sec4" class="btn-mas-informacion">Leer Información</a></center>
     </div>
   </div>
 
+  
   <div class="textabout" id="sec4">
     <div class="textabout_descripcion">
       <h2>SCRUM y Design Thinking</h2>
@@ -196,11 +228,11 @@
         SCRUMstudy, Accenture y JA México.</p>
       <center><a href="#sec5">Leer Más</a></center>
     </div>
-    <img src="images/SCRUMprov.svg">
+    <img src="images/basicos/ScrumGin.png">
   </div>
 
   <div class="textabout" id="sec5">
-    <img src="images/MicroProv.svg">
+    <img src="images/basicos/Microsoft.png">
     <div class="textabout_descripcion">
       <h2>Tecnologías Microsoft 365</h2>
       <br>
@@ -225,8 +257,9 @@
         </p>
       <center><a href="#sec0">Regresar</a></center>
     </div>
-    <img src="images/marketingProv.svg">
+    <img src="images/basicos/MarketingProv.png">
   </div>
+  
 
   <!-- END about imageBANNER -->
   <section class="info_section layout_padding">
