@@ -949,16 +949,52 @@ table th {
 
 
 /*BANNER ABOUT*/
-h7 {
+.banner_descripcion > h1 {
   font-weight: 700;
   font-size: 4em;
-  color: #ffffff;
+  color: #023047;
 }
+
+.slogan {
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: center;
+  color: #FB8500;
+  background: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-transform: none;
+}
+.slogan-cursor{
+  color: #FB8500;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.div-type{
+  margin-bottom: 35px;
+}
+
+/* Keyframes para el efecto de brillo en el texto 
+@keyframes glowText {
+  0% {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    text-shadow: 0px 0px 20px #FFB703;
+  }
+  100% {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+  }
+}
+*/
+
 
 .bannerabout {
   width: 100%;
   height: 1000px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -987,12 +1023,12 @@ h7 {
   }
 
 #sec1.textabout {
-  background-color: #8ECAE6;
+  background: linear-gradient(to bottom, #e6f7c9, #d9f7c9);
   height: 100%;
 }
 
 #sec2.textabout {
-  background-color: #8ECAE6;
+  background: linear-gradient(to bottom, #d9f7c9, rgb(210, 250, 242), #A8DADC);
   height: 100%;
 }
 
@@ -1010,17 +1046,17 @@ h7 {
 }
 
 #sec4.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom, #A8DADC, rgb(210, 249, 250));
   height: 100%;
 }
 
 #sec5.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom,  rgb(210, 249, 250), #f9f3ae);
   height: 100%;
 }
 
 #sec6.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom,#f9f3ae, #ffc27b);
   height: 100%;
 }
 
@@ -1038,9 +1074,10 @@ h7 {
 }
 
 
+
 .bannerabout a {
   display: inline-block;
-  padding: 7px 0;
+  padding: 7px 9px;
   color: #ffffffff !important;
   text-decoration: none;
   width: 150px;
@@ -1081,24 +1118,20 @@ html {
   align-items: center;
 }
 
-
-
 .textabout h2 {
   position: center fixed;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
   margin-bottom: 5px;
-  color: #080808;
   text-align: center;
-  color: black ; 
   border-radius: 10px;
+  color: #1D3557  ;
 }
 
 .textabout p {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #000000;
+  color: #141c1d;
   text-align: justify;
   border-radius: 20px;
 }
@@ -1106,17 +1139,16 @@ html {
 
 
 .textabout img {
-  height: 50%;
-  width: 50%;
+  /*height: 50%;*/
+  width: 40%;
   margin-left: 40px;
   margin-right: 40px;
 }
 
 
-
-.botonLeer {
-  background-color: #023047 !important;
+.btn-mas-informacion {
   color: white;
+  width: 175px !important;
 }
 
 @media screen and (max-width:1150px) {
@@ -1662,10 +1694,10 @@ html {
 /*Botones leer más*/
 .textabout a {
   display: inline-block;
-  padding: 7px 0;
+  padding: 7px 0px;
   color: white;
   text-decoration: none;
-  width: 100px;
+  width: 120px;
   text-align: center;
   border: 1px solid white;
   border-radius: 50px;
