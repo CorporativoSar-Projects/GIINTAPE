@@ -103,7 +103,7 @@
   color: #49b0e6;
 }
 
-#btn-social:checked~ .fa-play {
+#btn-social:checked~.fa-play {
   transform: rotate(0deg);
 }
 
@@ -113,10 +113,11 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-#btn-social:checked~ .icon-social {
+#btn-social:checked~.icon-social {
   transform: translateX(-100%);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.0);
 }
+
 /*End barra Redes*/
 
 /*Seccion Contacto*/
@@ -167,7 +168,7 @@
 .box {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     "form info"
@@ -949,16 +950,53 @@ table th {
 
 
 /*BANNER ABOUT*/
-h7 {
+.banner_descripcion>h1 {
   font-weight: 700;
   font-size: 4em;
-  color: #ffffff;
+  color: #023047;
 }
+
+.slogan {
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: center;
+  color: #FB8500;
+  background: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-transform: none;
+}
+
+.slogan-cursor {
+  color: #FB8500;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.div-type {
+  margin-bottom: 35px;
+}
+
+/* Keyframes para el efecto de brillo en el texto 
+@keyframes glowText {
+  0% {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    text-shadow: 0px 0px 20px #FFB703;
+  }
+  100% {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+  }
+}
+*/
+
 
 .bannerabout {
   width: 100%;
   height: 1000px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -973,8 +1011,9 @@ h7 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
+
 #video_background {
   position: absolute;
   bottom: 0px;
@@ -984,15 +1023,15 @@ h7 {
   object-fit: cover;
   z-index: -1;
   overflow: hidden;
-  }
+}
 
 #sec1.textabout {
-  background-color: #8ECAE6;
+  background: linear-gradient(to bottom, #e6f7c9, #d9f7c9);
   height: 100%;
 }
 
 #sec2.textabout {
-  background-color: #8ECAE6;
+  background: linear-gradient(to bottom, #d9f7c9, rgb(210, 250, 242), #A8DADC);
   height: 100%;
 }
 
@@ -1010,23 +1049,23 @@ h7 {
 }
 
 #sec4.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom, #A8DADC, rgb(210, 249, 250));
   height: 100%;
 }
 
 #sec5.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom, rgb(210, 249, 250), #f9f3ae);
   height: 100%;
 }
 
 #sec6.textabout {
-  background-color: white;
+  background: linear-gradient(to bottom, #f9f3ae, #ffc27b);
   height: 100%;
 }
 
 .banner_descripcion {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   width: 90%;
   max-width: 1000px;
   display: block;
@@ -1038,9 +1077,10 @@ h7 {
 }
 
 
+
 .bannerabout a {
   display: inline-block;
-  padding: 7px 0;
+  padding: 7px 9px;
   color: #ffffffff !important;
   text-decoration: none;
   width: 150px;
@@ -1050,7 +1090,7 @@ h7 {
   background-color: #023047 !important;
 }
 
-.banner_descripcion p{
+.banner_descripcion p {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
@@ -1081,24 +1121,20 @@ html {
   align-items: center;
 }
 
-
-
 .textabout h2 {
   position: center fixed;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
   margin-bottom: 5px;
-  color: #080808;
   text-align: center;
-  color: black ; 
   border-radius: 10px;
+  color: #1D3557;
 }
 
 .textabout p {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #000000;
+  color: #141c1d;
   text-align: justify;
   border-radius: 20px;
 }
@@ -1106,17 +1142,16 @@ html {
 
 
 .textabout img {
-  height: 50%;
-  width: 50%;
+  /*height: 50%;*/
+  width: 40%;
   margin-left: 40px;
   margin-right: 40px;
 }
 
 
-
-.botonLeer {
-  background-color: #023047 !important;
+.btn-mas-informacion {
   color: white;
+  width: 175px !important;
 }
 
 @media screen and (max-width:1150px) {
@@ -1219,12 +1254,12 @@ html {
 /*END CARRUCEL CLIENTES INDEX*/
 
 /*SECCIONES SCROOL MK*/
-.seccionmk{
+.seccionmk {
   background-color: #ffb703;
 
 }
 
-.seccionmk a{
+.seccionmk a {
   display: inline-block;
   padding: 7px 0;
   text-decoration: none;
@@ -1239,7 +1274,7 @@ html {
 .contenedorprecios {
   width: 100%;
   min-height: 100vh;
-  
+
 }
 
 .contenedorprecios h1 {
@@ -1338,7 +1373,7 @@ html {
   transition: max-height 0.2s ease-out;
 }
 
-.price-col input:checked ~ .detailsmk {
+.price-col input:checked~.detailsmk {
   max-height: 100%;
 }
 
@@ -1353,20 +1388,23 @@ html {
     width: 100%;
   }
 }
+
 /*END TARJETAS DE PRECIOS*/
 
 
 /*PORTAFOLIO MK*/
 
-.Carouselmk{
+.Carouselmk {
   width: 100%;
   background-color: #ffb703;
 }
-.Carouselmk h1{
+
+.Carouselmk h1 {
   text-align: center;
   color: #000000;
 }
-.Carouselmk h2{
+
+.Carouselmk h2 {
   font-size: 26px;
   line-height: 38px;
   padding-bottom: 24px;
@@ -1374,9 +1412,10 @@ html {
   letter-spacing: 10px;
   text-align: center;
 }
+
 /* images */
 
-.slick-list{
+.slick-list {
   position: relative;
   display: flex;
   align-items: center;
@@ -1387,7 +1426,8 @@ html {
   max-width: 90vw;
   overflow: hidden;
 }
-.slick-track{
+
+.slick-track {
   position: relative;
   top: 0;
   left: 0;
@@ -1395,7 +1435,8 @@ html {
   justify-content: center;
   transition: .5s ease-in-out;
 }
-.slick{
+
+.slick {
   position: relative;
   width: 275px;
   padding: 0 18px;
@@ -1404,7 +1445,8 @@ html {
   display: flex;
   height: 100%;
 }
-.slick h4{
+
+.slick h4 {
   position: absolute;
   z-index: 1;
   font-size: 22px;
@@ -1412,25 +1454,28 @@ html {
   color: #fff;
   padding: 15px;
 }
-.slick h4 small{
+
+.slick h4 small {
   font-size: 15px;
   display: block;
 }
-.slick a img{
+
+.slick a img {
   object-fit: cover;
   height: 300px;
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
   transition: .3s ease-in-out;
 }
-.slick a img:hover{
+
+.slick a img:hover {
   opacity: .85;
 }
 
 /* buttons */
 
-.slick-arrow{
+.slick-arrow {
   border-radius: 30px;
   background-color: #fff;
   position: absolute;
@@ -1438,22 +1483,26 @@ html {
   width: 48px;
   height: 48px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
   border: 0;
   cursor: pointer;
 }
-.slick-arrow:focus{
+
+.slick-arrow:focus {
   outline: 0;
 }
-.slick-arrow svg{
+
+.slick-arrow svg {
   width: 12px;
   height: 100%;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, .7);
 }
-.slick-prev{
+
+.slick-prev {
   left: 0px;
 }
-.slick-next{
+
+.slick-next {
   right: 0px;
 }
 
@@ -1504,7 +1553,7 @@ html {
 /*END PORTAFOLIO MK*/
 
 /*portafolio desarrollo*/
-.containerweb{
+.containerweb {
   width: 70%;
   min-height: 100vh;
   max-width: 1200px;
@@ -1512,12 +1561,12 @@ html {
   overflow: hidden;
 }
 
-.sliderweb{
+.sliderweb {
   padding: 40px 0;
   background-color: white !important;
 }
 
-.slider__containerweb{
+.slider__containerweb {
   /*display: grid;
   grid-template-columns: 50px 1fr 50px;
   align-items: center;
@@ -1528,7 +1577,7 @@ html {
   width: 100%;
 }
 
-.slider__bodyweb{
+.slider__bodyweb {
 
   display: flex;
   align-items: center;
@@ -1540,17 +1589,18 @@ html {
   margin-bottom: 40px;
 }
 
-.slider__body--showweb{
+.slider__body--showweb {
   opacity: 1;
   pointer-events: unset;
 }
 
-.slider__textsweb{
+.slider__textsweb {
   margin-bottom: 20px;
 }
+
 .slider__vidweb {
   width: 70% !important;
-  height: auto; 
+  height: auto;
 }
 
 .clienteDesarrollo {
@@ -1569,7 +1619,7 @@ html {
   flex: 0 0 auto;
   max-width: 100%;
   margin-right: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 
@@ -1651,21 +1701,21 @@ html {
   background-color: #000000;
 }
 
-.textabout_descripcion{
+.textabout_descripcion {
   height: auto;
   width: 700px;
   margin-left: 100px;
   margin-right: 100px;
-  
+
 }
 
 /*Botones leer más*/
 .textabout a {
   display: inline-block;
-  padding: 7px 0;
+  padding: 7px 0px;
   color: white;
   text-decoration: none;
-  width: 100px;
+  width: 120px;
   text-align: center;
   border: 1px solid white;
   border-radius: 50px;
@@ -1705,11 +1755,11 @@ html {
 
 }
 
-@media (max-width:768px){
-  .slider__bodyweb{
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content 1fr;
-      gap: 1em;
+@media (max-width:768px) {
+  .slider__bodyweb {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 1em;
   }
 
 
@@ -1719,9 +1769,9 @@ html {
   }
 }
 
-@media (max-width:425px){
-  .slider__containerweb{
-      grid-template-columns: 25px 1fr 25px;
+@media (max-width:425px) {
+  .slider__containerweb {
+    grid-template-columns: 25px 1fr 25px;
   }
 
 
@@ -1779,11 +1829,11 @@ html {
 /*END CARRUCEL CLIENTES INDEX*/
 
 /*SECCIONES SCROOL MK*/
-.seccionmk{
-background-color: #fff;
+.seccionmk {
+  background-color: #fff;
 }
 
-.seccionmk a{
+.seccionmk a {
   display: inline-block;
   padding: 7px 0;
   text-decoration: none;
@@ -1815,7 +1865,7 @@ background-color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 25px;
-  
+
 }
 
 .price-col {
@@ -1898,7 +1948,7 @@ background-color: #fff;
   transition: max-height 0.2s ease-out;
 }
 
-.price-col input:checked ~ .detailsmk {
+.price-col input:checked~.detailsmk {
   max-height: 100%;
 }
 
@@ -1913,15 +1963,17 @@ background-color: #fff;
     width: 100%;
   }
 }
+
 /*END TARJETAS DE PRECIOS*/
 
 
 /*PORTAFOLIO MK*/
 
-.Carouselmk{
+.Carouselmk {
   width: 100%;
 }
-.Carouselmk h2{
+
+.Carouselmk h2 {
   color: #000000;
   line-height: 38px;
   padding-bottom: 24px;
@@ -1933,7 +1985,7 @@ background-color: #fff;
 
 /* images */
 
-.slick-list{
+.slick-list {
   position: relative;
   display: flex;
   align-items: center;
@@ -1944,7 +1996,8 @@ background-color: #fff;
   max-width: 90vw;
   overflow: hidden;
 }
-.slick-track{
+
+.slick-track {
   position: relative;
   top: 0;
   left: 0;
@@ -1952,7 +2005,8 @@ background-color: #fff;
   justify-content: center;
   transition: .5s ease-in-out;
 }
-.slick{
+
+.slick {
   position: relative;
   width: 275px;
   padding: 0 18px;
@@ -1961,7 +2015,8 @@ background-color: #fff;
   display: flex;
   height: 100%;
 }
-.slick h4{
+
+.slick h4 {
   position: absolute;
   z-index: 1;
   font-size: 22px;
@@ -1969,25 +2024,28 @@ background-color: #fff;
   color: #fff;
   padding: 15px;
 }
-.slick h4 small{
+
+.slick h4 small {
   font-size: 15px;
   display: block;
 }
-.slick a img{
+
+.slick a img {
   object-fit: cover;
   height: 300px;
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
   transition: .3s ease-in-out;
 }
-.slick a img:hover{
+
+.slick a img:hover {
   opacity: .85;
 }
 
 /* buttons */
 
-.slick-arrow{
+.slick-arrow {
   border-radius: 30px;
   background-color: #fff;
   position: absolute;
@@ -1995,27 +2053,31 @@ background-color: #fff;
   width: 48px;
   height: 48px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
   border: 0;
   cursor: pointer;
 }
-.slick-arrow:focus{
+
+.slick-arrow:focus {
   outline: 0;
 }
-.slick-arrow svg{
+
+.slick-arrow svg {
   width: 12px;
   height: 100%;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, .7);
 }
-.slick-prev{
+
+.slick-prev {
   left: 0px;
 }
-.slick-next{
+
+.slick-next {
   right: 0px;
 }
 
 /*portafolio desarrollo*/
-.containerweb{
+.containerweb {
   width: 90%;
   min-height: 100vh;
   max-width: 1200px;
@@ -2023,19 +2085,19 @@ background-color: #fff;
   overflow: hidden;
 }
 
-.sliderweb{
+.sliderweb {
   background-color: #f2f2f2;
   padding: 40px 0;
 }
 
-.slider__containerweb{
+.slider__containerweb {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   align-items: center;
   gap: 1em;
 }
 
-.slider__bodyweb{
+.slider__bodyweb {
   grid-column: 2/3;
   grid-row: 1/2;
   opacity: 0;
@@ -2047,16 +2109,16 @@ background-color: #fff;
   transition: opacity 1.5s;
 }
 
-.slider__body--showweb{
+.slider__body--showweb {
   opacity: 1;
   pointer-events: unset;
 }
 
-.slider__textsweb{
+.slider__textsweb {
   max-width: 100%;
 }
 
-.subtitleweb{
+.subtitleweb {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #219EBC;
@@ -2065,15 +2127,15 @@ background-color: #fff;
   text-align: center;
 }
 
-.slider__reviewweb{
+.slider__reviewweb {
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7;
   color: #023047;
-  
+
 }
 
-.slider__vidweb{
+.slider__vidweb {
   width: 450px;
   height: auto;
   border-radius: 5%;
@@ -2082,56 +2144,57 @@ background-color: #fff;
   margin: 0 auto;
 }
 
-.slider__arrowweb{
+.slider__arrowweb {
   cursor: pointer;
   width: 90%;
 }
 
-.slider__arrowweb:nth-of-type(2){
+.slider__arrowweb:nth-of-type(2) {
   justify-self: end;
 }
 
-@media (max-width:768px){
-  .slider__bodyweb{
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content 1fr;
-      gap: 1em;
+@media (max-width:768px) {
+  .slider__bodyweb {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 1em;
   }
 
-  .slider__pictureweb{
-      grid-row: 1/2;
+  .slider__pictureweb {
+    grid-row: 1/2;
   }
 
-  .slider__vidweb{   
-      width: 210px;
-      height: auto;
+  .slider__vidweb {
+    width: 210px;
+    height: auto;
   }
 }
 
-@media (max-width:425px){
-  .slider__containerweb{
-      grid-template-columns: 25px 1fr 25px;
+@media (max-width:425px) {
+  .slider__containerweb {
+    grid-template-columns: 25px 1fr 25px;
   }
 
-  .slider__arrowweb{
-     width: 100%;
+  .slider__arrowweb {
+    width: 100%;
   }
 
-  .slider__vidweb{   
-      width: 180px;
-      height: auto;
+  .slider__vidweb {
+    width: 180px;
+    height: auto;
   }
 
-  .subtitleweb{
-      font-size: 2rem;
-      margin-bottom: 15px;
+  .subtitleweb {
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
 
-  .slider__reviewweb{
-      font-size: 1rem;
-      line-height: 1.6;
+  .slider__reviewweb {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
+
 /*end portafolio desarrolo*/
 
 .info_section {
@@ -2858,7 +2921,7 @@ ul li {
   color: white;
 }
 
-:root{
+:root {
   /* COLORS */
   --color: #9176FF;
   --bg-color: #f4f4f4;
@@ -2976,15 +3039,16 @@ ul li {
   margin-left: 10%;
 }
 
-#Clientes{
+#Clientes {
   filter: grayscale(100%);
 }
-#Clientes:hover{
+
+#Clientes:hover {
   filter: grayscale(0%);
 }
 
 .gallery img {
-  flex: 1 1 calc(33% - 10px); 
+  flex: 1 1 calc(33% - 10px);
   max-width: calc(15% - 10px);
   height: calc(15% - 10px);
   object-fit: cover;
@@ -3006,7 +3070,7 @@ ul li {
 }
 
 .inputBox a {
-color: #023047;
+  color: #023047;
 }
 
 .inputBox a:hover {
@@ -3016,17 +3080,26 @@ color: #023047;
 
 /* The Modal (background) */
 .modalAviso {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
   vertical-align: middle !important;
 }
 
@@ -3064,7 +3137,7 @@ color: #023047;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -3124,20 +3197,139 @@ color: #023047;
   display: none;
 }
 
+
 .gallery img {
   width: 20vw;
   height: auto;
   scroll-snap-align: center;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+
 }
 
-.prev-btn, .next-btn {
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos del Modal Gallery*/
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.modal.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+/* Botones de navegación en Modal */
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.prev {
+  left: 70px;
+}
+
+.next {
+  right: 30px;
+}
+
+/* Animacion cambio de imagen en modal */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/*Fin Animacion en modal*/
+
+.prev:hover,
+.next:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   font-size: 24px;
@@ -3163,7 +3355,7 @@ color: #023047;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -3182,15 +3374,24 @@ color: #023047;
   font-weight: bold;
   cursor: pointer;
 }
+
 /*fin slider clientes Mk*/
 
 /*Tabla Planes marketing*/
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 20px auto;
-  background-color: #fff;
+.divTableMk{
+  width: 100%;
 }
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-x: auto;
+  display: block;
+}
+
 
 caption {
   font-size: 1.5em;
@@ -3199,26 +3400,43 @@ caption {
   color: #fb8500;
 }
 
-th, td {
-  border: 1px solid #fb8500;
+th,
+td {
+  border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
   color: #000;
   background-color: white;
   font-size: 18px;
-  
+
 }
 
 th {
   background-color: #fb8500;
   color: white;
-  border: white;
+  border: 1px solid #ddd !important;
 }
 
-tr{
+td {
+  border: 1px solid #fb8500;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background: white;
+}
+
+tr {
   background-color: #f2f2f2;
   font-size: 18px;
 }
+
+.precio-row {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1b97b7 !important;
+  /*text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.3);*/
+}
+
 
 tr:hover {
   background-color: #e0e0e0;
@@ -3229,6 +3447,7 @@ tr:hover {
   color: #fb8500;
   font-weight: bold;
 }
+
 
 .mes-gratis {
   font-size: 32px;
@@ -3243,6 +3462,7 @@ tr:hover {
   color: #000;
 }
 
+
 .PreciosMarketing th {
   font-size: 26px;
   font-weight: bold;
@@ -3250,32 +3470,67 @@ tr:hover {
 }
 
 .PlanMasVendido {
-  color: #023047;
+  color: #0b4c6c !important;
+  font-size: 22px;
   font-weight: bold;
+}
+
+/*Plan Despegue*/
+.descripcionPlanDespegue{
+  color: white;
+  margin-top: 4px;
+  display: block;
+  font-size: 14px;
+
+}
+/*Encabezado th*/
+.PrecioIdealMk {
+  border-top: 6px solid #219EBC !important;
+  border-right: 6px solid #219EBC !important;
+  border-left: 6px solid #219EBC !important;
+  border-bottom: 1px solid #fb8500 !important;
+  background-color: #ffb703 !important;
+}
+
+/*Borde inferior de las celdas*/
+.PreciosMarketing th:nth-child(3),
+.PreciosMarketing td:nth-child(3) {
+  border-bottom: 1px solid #fb8500;
+}
+
+/* Borde derecho e izquierdo para las celdas */
+.PreciosMarketing td:nth-child(3) {
+  border-right: 6px solid #219EBC;
+  border-left: 6px solid #219EBC;
+}
+
+/* Borde inferior solo en la última fila */
+.PreciosMarketing tr:last-child td:nth-child(3) {
+  border-bottom: 6px solid #219EBC;
 }
 
 .PreciosMarketing th.PrecioIdealMk,
 .PreciosMarketing td:nth-child(3) {
-  background-color: #FFB703;
+  background-color: #FFFFFF;
   color: rgb(5, 5, 5);
 }
 
 .PreciosMarketing tr:last-child th.PrecioIdealMk,
 .PreciosMarketing tr:last-child td:nth-child(3) {
-  background-color: #FFFFFF; 
-  color: rgb(5, 5, 5); 
+  background-color: #FFFFFF;
+  color: rgb(5, 5, 5);
 }
 
 .PreciosMarketing tr:first-child th.PrecioIdealMk,
 .PreciosMarketing tr:first-child td:nth-child(3) {
-  background-color: #FFB703; 
+  background-color: #FFFFFF;
 }
 
-.PreciosMarketing th .descripcionPlanMk{
-    font-size: 14px;
-    color: #f4f4f4;
-    margin-top: 4px;
-    display: block;
+.PreciosMarketing th .descripcionPlanMk {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: 4px;
+  display: block;
 }
 
 .fila-botones {
@@ -3289,7 +3544,7 @@ tr:hover {
 }
 
 .PreciosMarketing .celdaBlanca {
-  background-color: white !important; 
+  background-color: white !important;
 }
 
 .btn-marketing {
@@ -3315,30 +3570,189 @@ tr:hover {
 .precio-row td {
   font-size: 22px;
 }
+
 /*Fin tabla planes Marketing*/
 
+/*PLANES desarrollo Web*/
+/* Contenedor de los planes */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Tarjetas de precios */
+.pricing-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 340px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  margin-top: 10px;
+
+}
+
+/* Destacar el plan más popular */
+.popular {
+  border: 2px solid #219EBC;
+}
+
+.most-popular {
+  background-color: #219EBC;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+/* Título del plan */
+.pricing-card > h2 {
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Precio */
+.price {
+  font-size: 29px;
+  font-weight: bold;
+  color: #8ECAE6;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.payment-type {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.info-soporte {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background-color: rgba(0, 123, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.floating-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #023047;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.floating-btn:hover {
+  background-color: #75c7ec;
+  color: #023047;
+}
+
+.div-pay{
+  text-align: center;
+}
+
+/* Lista de características */
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.features li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #023047;
+}
+
+.comparison-container > h2{
+  color: #219EBC;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
 /*Inicia tabla Planes desarrollo web*/
+.comparison-container{
+  width: 100%;
+}
 .tablePlanesDesarrollo {
-  width: 80%;
+  width: 90%;
   border-collapse: collapse;
-  margin: 20px auto;
   background-color: #fff;
+  border-collapse: collapse;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .tablePlanesDesarrollo th {
   background-color: #023047;
   color: white;
-  padding: 10px;
+  padding: 14px;
+  font-size: 20px;
 }
 
 .tablePlanesDesarrollo td {
   background-color: white;
-  color: rgb(5, 5, 5);
-  padding: 10px;
-  border: 1px solid #ddd;
+  color: #333;
+  padding: 14px;
+  border: 1px solid #219EBC;
   font-size: 18px;
+  text-align: center;
 }
 
+/* Resaltar solo el borde exterior de la columna "Landing GIINTAPE" */
+.tablePlanesDesarrollo td:nth-child(3),
+.tablePlanesDesarrollo th:nth-child(3) {
+  border-left: 4px solid #219EBC !important; 
+  border-right: 4px solid #219EBC !important; 
+}
+
+.tablePlanesDesarrollo tr:first-child th:nth-child(3) {
+  border-top: 4px solid #219EBC !important; /* Borde superior */
+}
+
+.tablePlanesDesarrollo tr:last-child td:nth-child(3) {
+  border-bottom: 4px solid #219EBC !important; /* Borde inferior */
+}
+
+.recomendado{
+  background: #8ECAE6 !important;
+}
 
 .fila-botonesDesarrollo {
   border: none;
@@ -3350,34 +3764,34 @@ tr:hover {
   padding: 16px;
 }
 
-
-
 .btn-desarrollo {
-  background-color: #023047;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  text-decoration: none;
   display: inline-block;
+  background: white;
+  color: #219EBC;
+  border: 1px solid #219EBC ;
+  padding: 10px 15px;
+  text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-bottom: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-desarrollo:hover {
-  color: #023047;
-  background-color: white;
-  border: 2px solid #023047;
+  background: #219EBC;
+  color: white;
 }
 
-.tablePlanesDesarrollo .planesDesarrollo td{
-  font-size: 22px;
+.tablePlanesDesarrollo .planesDesarrollo td {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  color: #023047;
 }
 
 /*Fin tabla Planes desarrollo web*/
 
-input select{
+input select {
   width: 100% !important;
 }
