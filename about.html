@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--Comentario prueba-->
+
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -41,7 +42,8 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <!--Type Effect-->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -56,7 +58,8 @@
   <script src="https://kit.fontawesome.com/c41cb6ddd6.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -116,12 +119,12 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
-
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="soporteTecnico.html">Soporte técnico</a>
+                    </li>
+
                   </ul>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://giintapeinnovahue.freshdesk.com/support/home" target="_blank">Soporte técnico</a>
-                  </li>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html"> Talento INNOVAHUE</a>
@@ -139,7 +142,7 @@
   <div class="bannerabout" id="sec0">
     <!--Video de fondo-->
     <video autoplay loop muted id="video_background" preload="auto" width="100%" height="auto">
-      <source src="Videos/Logofondo.mp4" type="video/mp4" />
+      <source src="images/GiintapeInnovahue.mp4" type="video/mp4" />
       Tu navegador no soporta el video.
     </video>
 
@@ -148,59 +151,60 @@
       <br>
       <div class="div-type">
         <p id="typewriter"></p>
-      </div>     
+      </div>
       <a href="#sec1" class="btn-mas-informacion">Leer Información</a>
     </div>
-    <!--Script Slogan-->
+    <!--Script Slogan -->
+
     <script>
       let app = document.getElementById('typewriter');
 
       let typewriter = new Typewriter(app, {
-          loop: true,
-          delay: 75,
-          cursor: "<span class='slogan-cursor'>|</span>",
+        loop: true,
+        delay: 75,
+        cursor: "<span class='slogan-cursor'>|</span>",
       });
 
       typewriter
-          .pauseFor(1500)
-          .typeString('<span class="slogan">"Trabajemos juntos, crezcamos juntos"</span>')
-          .pauseFor(1000)
-          .deleteAll(50)
-          .start();
-  </script>
+        .pauseFor(1500)
+        .typeString('<span class="slogan">"Trabajemos juntos, crezcamos juntos"</span>')
+        .pauseFor(1000)
+        .deleteAll(50)
+        .start();
+    </script>
 
-    
-  
+
+
   </div>
-  
+
   <div class="textabout" id="sec1">
     <div class="textabout_descripcion">
       <h2 class="titleAbout subtitleabout">Misión</h2>
-      
-      <p>Somos una empresa dedicada a ayudar a las
+
+      <p class="paragraph">Somos una empresa dedicada a ayudar a las
         MiPyMEs y negocios del país a establecer y
         desarrollar las estrategias, el contenido
         digital, el software y la tecnología que
         necesitan para impulsar el crecimiento de su
         negocio.</p>
-      <center><a href="#sec2">Leer Más</a></center>
+      <center><a class="btn-about" href="#sec2">Leer Más</a></center>
     </div>
-    <img src="images/basicos/MisionGin.png">
+    <img id="imgMision" src="images/basicos/MisionGin.png">
   </div>
 
   <div class="textabout" id="sec2">
-    <img src="images/basicos/VisionGin.png">
+    <img id="imgVision" src="images/basicos/VisionGin.png">
     <div class="textabout_descripcion">
       <h2 class="subtitleabout">Visión</h2>
       <br>
-      <p>Ser reconocida como una de las principales
+      <p class="paragraph">Ser reconocida como una de las principales
         empresas mexicanas en ofrecer capacitación
         en tecnologías Microsoft, consultoría
         metodológica e integral en Marketing Digital
         y software, brindando soluciones completas,
         alineadas y acordes a las necesidades y visión
         de nuestros clientes.</p>
-      <center><a href="#sec3">Leer Más</a></center>
+      <center><a class="btn-about" href="#sec3">Leer Más</a></center>
     </div>
   </div>
 
@@ -210,7 +214,7 @@
       <source src="images/GiintapeInnovahue.mp4" type="video/mp4" />
       Tu navegador no soporta el video.
     </video>
-    
+
     <div class="banner_descripcion">
       <h1>Nuestra preparación y experiencia</h1>
       <br>
@@ -218,99 +222,101 @@
     </div>
   </div>
 
-  
+
   <div class="textabout" id="sec4">
     <div class="textabout_descripcion">
-      <h2>SCRUM y Design Thinking</h2>
-
+      <h2 class="subtitleabout">SCRUM y Design Thinking</h2>
       <br>
-      <p>Nuestros profesionales cuentan con certificaciones y reconocimientos por organizaciones y empresas como;
+      <p class="paragraph">Nuestros profesionales cuentan con certificaciones y reconocimientos por organizaciones y
+        empresas como;
         SCRUMstudy, Accenture y JA México.</p>
-      <center><a href="#sec5">Leer Más</a></center>
+      <center><a class="btn-about" href="#sec5">Leer Más</a></center>
     </div>
-    <img src="images/basicos/ScrumGin.png">
+    <img id="imgScrum" src="images/basicos/ScrumGin.png">
   </div>
 
   <div class="textabout" id="sec5">
-    <img src="images/basicos/Microsoft.png">
+    <img id="imgMicrosoft" src="images/basicos/Microsoft.png">
     <div class="textabout_descripcion">
-      <h2>Tecnologías Microsoft 365</h2>
+      <h2 class="subtitleabout">Tecnologías Microsoft 365</h2>
       <br>
-      <p>En GIINTAPE INNOVAHUE contamos con
+      <p class="paragraph">En GIINTAPE INNOVAHUE contamos con
         reconocimientos y certificaciones en
         tecnologías Microsoft, otorgados por
         Microsoft y otras comunidades Microsoft
         del país.</p>
-      <center><a href="#sec6">Leer Más</a></center>
+      <center><a class="btn-about" href="#sec6">Leer Más</a></center>
     </div>
 
   </div>
 
   <div class="textabout" id="sec6">
     <div class="textabout_descripcion">
-      <h2>Marketing Digital</h2>
+      <h2 class="subtitleabout">Marketing Digital</h2>
       <br>
-      <p>Conocemos la importancia de la Viralidad,
+      <p class="paragraph">Conocemos la importancia de la Viralidad,
         Valor y Venta en redes sociales, gracias a
         cursos y certificaciones de Google,
         Facebook y otras organizaciones.
-        </p>
-      <center><a href="#sec0">Regresar</a></center>
+      </p>
+      <center><a class="btn-about" href="#sec0">Regresar</a></center>
     </div>
-    <img src="images/basicos/MarketingProv.png">
+    <img id="imgMk" src="images/basicos/MarketingProv.png">
   </div>
-  
+
 
   <!-- END about imageBANNER -->
-  <section class="info_section layout_padding">
+  <!-- footer section -->
+  <section id="footer" class="info_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="images/logogiintape.png" width="200" height="200">
+          <img class="logo-footer" src="images/logogiintape.png" width="200" height="200"
+            alt="Giintape innovahue agencia de publicidad cdmx">
           <br>
           <br>
           <div class="info-logo">
-            <h2>
+            <h2 class="title-footer">
               GIINTAPE INNOVAHUE
             </h2>
-            <p>
+            <p class="descriptionGI-footer">
               GRUPO IMPULSOR DE INNOVACIÓN EN TECNOLOGÍA Y AUTOMATIZACIÓN DE PROCESOS EMPRESARIALES INNOVAHUE, S.A.S.
             </p>
           </div>
         </div>
         <div class="col-md-4 nav-options">
           <div class="info-nav">
-            <h4 style="font-size: 25px;">
+            <h4 style="font-size: 25px;" class="subtitle-footer">
               Navegar
             </h4>
             <ul>
               <li>
-                <a style="font-size: 23px" href="index.html">
+                <a style="font-size: 23px" href="index.html" class="nav-footer">
                   Inicio
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="about.html">
+                <a style="font-size: 23px" href="about.html" class="nav-footer">
                   Informaci&oacute;n
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="consultoriamk.html">
+                <a style="font-size: 23px" href="consultoriamk.html" class="nav-footer">
                   Marketing Digital
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="desarrolloweb.html">
+                <a style="font-size: 23px" href="desarrolloweb.html" class="nav-footer">
                   Desarrollo de Software
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px;" href="https://giintapeinnovahue.freshdesk.com/support/home">
+                <a style="font-size: 23px;" href="soporteTecnico.html" class="nav-footer">
                   Soporte técnico
                 </a>
               </li>
               <li>
-                <a style="font-size: 23px" href="contact.html">
+                <a style="font-size: 23px" href="contact.html" class="nav-footer">
                   Talento INNOVAHUE
                 </a>
               </li>
@@ -319,50 +325,51 @@
         </div>
         <div class="col-md-4">
           <div class="info-contact">
-            <h4 style="font-size: 22px">
+            <h4 style="font-size: 22px" class="subtitle-footer">
               Información de Contacto
             </h4>
             <div class="location">
-              <h6 style="font-size: 20px; color: white;">
+              <h6 style="font-size: 20px; color: white;" class="nav-footer">
                 Nuestras Oficinas:
               </h6>
               <a href="https://maps.app.goo.gl/rjm6zeSu2Z2jMfmP9" target="_blank">
                 <img src="images/location.png" alt="giintape innovahue publicidad en redes sociales cdmx">
-                <span style="font-size: 16px;">
+                <span style="font-size: 16px;" class="description-footer">
                   Río Guadiana 31, Cuauhtémoc, Cuauhtémoc, 06500, CDMX
                 </span>
               </a>
             </div>
             <div class="call">
-              <h6 style="font-size: 20px; color: white;">
+              <h6 style="font-size: 20px; color: white;" class="nav-footer">
                 Tel&eacute;fono:
               </h6>
               <a>
                 <img src="images/telephone.png" alt="whatsapp giintape innovahue marketing en redes sociales cdmx">
-                <span style="font-size: 16px;">
+                <span style="font-size: 16px;" class="description-footer">
                   (+52)56 5397 5314
                 </span>
               </a>
             </div>
             <br>
             <div class="email">
-              <h6 style="font-size: 20px; color: white;">
+              <h6 style="font-size: 20px; color: white;" class="nav-footer">
                 Correo:
               </h6>
               <a href="mailto:contacto@giintapeinnovahue.com" target="_blank">
-                <img src="images/email_icon_giin.png" alt="correo giintape innovahue marketing en redes sociales cdmx" width="18px">
-                <span style="font-size: 16px;">
+                <img src="images/email_icon_giin.png" alt="correo giintape innovahue marketing en redes sociales cdmx"
+                  width="18px">
+                <span style="font-size: 16px;" class="description-footer">
                   contacto@giintapeinnovahue.com
                 </span>
               </a>
             </div>
             <div class="time">
-              <h6 style="font-size: 20px; color: white;">
+              <h6 style="font-size: 20px; color: white;" class="nav-footer">
                 Horario:
               </h6>
               <a>
                 <img src="images/time.png" alt="horario giintape innovahue marketing en redes sociales cdmx">
-                <span style="font-size: 16px;">
+                <span style="font-size: 16px;" class="description-footer">
                   Lunes a viernes de 9 a 18 hrs.
                 </span><br>
               </a>
@@ -370,9 +377,12 @@
           </div>
           <!--Links Redes Sociales-->
           <ul class="sci">
-            <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/innsolcorporation"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li><a href="https://www.instagram.com/giintape_innovahue/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li><a href="https://es.linkedin.com/company/giintape-innovahue"><ion-icon
+                  name="logo-linkedin"></ion-icon></a></li>
             <!--<li><a href="https://www.tiktok.com/@mktikeip7"><ion-icon name="logo-tiktok"></ion-icon></a></li>-->
           </ul>
         </div>
