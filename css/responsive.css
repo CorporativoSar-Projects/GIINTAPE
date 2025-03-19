@@ -1,4 +1,3 @@
-
 @media(max-width: 992px) {
     .custom_nav-container .nav_search-btn {
         display: none;
@@ -32,7 +31,7 @@
             "form"
             "info"
             "map";
-        
+
         justify-content: center;
         align-items: center;
     }
@@ -41,7 +40,7 @@
         display: flex;
         gap: 0;
         flex-direction: column;
-        
+
     }
 
     .inputBox {
@@ -55,11 +54,12 @@
         width: 100%;
     }
 
-    .contact.map{
+    .contact.map {
         width: 100%;
         height: 700px;
     }
-    .info_section.layout_padding{
+
+    .info_section.layout_padding {
         height: 1300px;
     }
 }
@@ -157,9 +157,11 @@
         0% {
             transform: translateY(25px);
         }
+
         50% {
             transform: translateY(-25px);
         }
+
         100% {
             transform: translateY(25px);
         }
@@ -169,9 +171,11 @@
         0% {
             transform: translateY(-25px);
         }
+
         50% {
             transform: translateY(25px);
         }
+
         100% {
             transform: translateY(-25px);
         }
@@ -210,7 +214,7 @@
         color: #000000;
         position: relative;
         font-size: 1.2rem;
-        
+
     }
 
     .service_images {
@@ -230,6 +234,7 @@
 }
 
 @media (max-width: 412px) {
+
     /* Página contact */
     .contact.form h3 {
         font-size: 0.9rem;
@@ -238,82 +243,526 @@
         overflow-wrap: break-word;
     }
 
-    .contact.info h3
-    {
+    .contact.info h3 {
         font-size: 1.2rem;
     }
+
     .contact.info p,
     .contact.info a {
-        text-align: center; 
+        text-align: center;
         font-size: 1.5rem;
-    }       
+    }
 
     .contactUs .titlecontac h2 {
         font-size: 1.2rem;
         padding: 0 15px;
     }
-  
+
     .formBox .row50 {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
-  
+
     .inputBox {
-      width: 100%;
-      display: inline-flex;
-      align-items: left;
+        width: 100%;
+        display: inline-flex;
+        align-items: left;
     }
 
     .infoBox {
         flex-direction: column;
         gap: 20px;
-        margin-left:10px;
-      }
+        margin-left: 10px;
+    }
 
     .contact.form {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
 
-    .contact.info{
+    .contact.info {
         padding-left: 25%;
         align-items: center;
-    } 
-  
-    .contact.map {
-      width: 100%;
-      height: 540px;
     }
-  
+
+    .contact.map {
+        width: 100%;
+        height: 540px;
+    }
+
     .container {
-      width: 100%;
+        width: 100%;
     }
 
     #btn-file {
         word-break: break-all;
-        
+
     }
-  
+
     /* Home */
     .gallery img {
-      max-width: 35% !important;
-      width: 35%;
+        max-width: 35% !important;
+        width: 35%;
     }
-  
+
     /* Footer */
     .info_section.layout_padding {
-      width: 100%;
-      padding: 5%;
-      height: 1400px;
+        width: 100%;
+        padding: 5%;
+        height: 1400px;
     }
-  
+
     /* Header */
     .header_section {
-      max-width: 100% !important;
+        max-width: 100% !important;
     }
-  
+
     .container-fluid {
-      width: 100%;
+        width: 100%;
     }
+}
+
+/*Surface*/
+@media(max-width: 913px){
+    #footer {
+        height: 680px;
+    }
+}
+
+@media(max-width: 541px){
+    #footer {
+        height: 1100px !important;
+    }
+}
+
+/*Pantalla 1024*/
+@media(max-width: 1025px){
+    .textabout_descripcion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_descripcion h1 {
+        font-size: 2rem;
+    }
+
+    .textabout {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    
+    .textabout img {
+        order: 3; /* Imagen al final */
+        height: 45%;
+        width: 33%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    #imgMk{
+        width: 230px;
+        height: 240px;
+    }
+
+    #imgScrum{
+        width: 250px;
+        height: 200px;
+    }
+
+    
+    #imgMicrosoft{
+        width: 230px;
+        height: 190px;
+    }
+
+    
+    #imgMision{
+        width: 200px !important;
+        height: 180px !important;
+    }
+
+    #imgVision{
+        width: 220px !important;
+        height: 180px !important;
+    }
+
+    
+    .textabout .textabout_descripcion .subtitleabout {
+        order: 1; /* Título primero */
+        font-size: 28px;
+    }
+    
+    .textabout .textabout_descripcion p {
+        order: 2; /* Texto después del título */
+        margin: 15px 30px;
+    
+    }
+    
+    .textabout .textabout_descripcion center {
+        order: 3; /* Botón antes de la imagen */
+    }
+
+    .btn-about{
+        margin-top: 15px;
+    }
+
+    /*Soporte tecnico*/
+    .descriptionSP{
+        font-size: 16px;
+        width: 85%;
+
+    }
+
+    .pricing-card{
+        width: 26%;
+    }
+
+}
+
+/*
+Pantallas de tablet
+*/
+
+@media (max-width: 769px) {
+
+    /*Footer*/
+    #footer {
+        height: 680px;
+    }
+
+    .logo-footer{
+        width: 140px;
+        height: 140px;
+    }
+    .title-footer{
+        font-size: 21px !important;
+    }
+
+    .subtitle-footer{
+        font-size: 18px !important;
+    }
+
+    .descriptionGI-footer{
+        font-size: 13px !important;
+    }
+    .description-footer{
+        font-size: 10.6px !important;
+    }
+
+    .nav-footer{
+        font-size: 15px !important;
+    }
+
+
+    /*About us*/
+
+    .paragraph{
+        font-size: 16px;
+        margin: 10px 20px !important;
+    }
+    
+    .subtitleabout{
+        font-size: 26px !important;
+        margin-top: 10px;
+        margin-bottom: 0px !important;
+    }
+
+    .textabout .textabout_descripcion center a{
+        font-size: 14px;
+    }
+    #imgMision{
+        width: 240px !important;
+        height: 200px !important;
+    }
+
+    #imgVision{
+        width: 250px !important;
+        height: 200px !important;
+    }
+
+    #imgScrum{
+        width: 270px;
+        height: 220px;
+    }
+
+    #imgMk{
+        width: 40% !important;
+        height: 55% !important;
+    }
+
+    /*Soporte Tecnico*/
+    .pricing-card{
+        width: 25%;
+    }
+
+    .pricing-card > h2{
+        font-size: 20px;
+    }
+
+    .payment-type{
+        font-size: 16px;
+    }
+
+}
+
+/*
+Pantallas de celular
+*/
+
+@media (max-width: 426px) {
+
+    /* Home */
+    .gallery img {
+        max-width: 35% !important;
+        width: 35%;
+    }
+
+    .titulos_secciones{
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*Footer*/
+    #footer {
+        height: 1200px;
+    }
+    .description-footer{
+        font-size: 14px !important;
+    }
+
+    .logo-footer{
+        width: 130px;
+        height: 130px;
+    }
+
+    /*About Us*/
+    .banner_descripcion h1 {
+        font-size: 2rem;
+    }
+
+    .subtitleabout{
+        font-size: 24px !important;
+        margin-bottom: 5px !important;
+    }
+    .paragraph {
+        font-size: 13px !important;
+    }    
+
+    .btn-about{
+        font-size: 12px !important;
+        width: 100px !important;
+        height: 30px !important;
+    }
+
+    #imgMision{
+        width: 220px !important;
+        height: 190px !important;
+    }
+
+    #imgVision{
+        width: 230px !important;
+        height: 190px !important;
+    }
+
+    #imgScrum{
+        width: 230px;
+        height: 190px;
+    }
+    
+    #imgMicrosoft{
+        width: 230px;
+        height: 190px;
+    }
+
+    #imgMk{
+        width: 53% !important;
+    }
+}
+
+@media ( max-width: 376px){
+    /*FOOTER*/
+    .logo-footer{
+        width: 110px;
+        height: 110px;
+    }
+
+    /*About*/
+    .banner_descripcion h1{
+        font-size: 1.2rem;
+    }
+    .slogan,  .slogan-cursor{
+        font-size: 1rem;
+    }
+    
+    .btn-mas-informacion{
+        font-size: 13px;
+    }
+
+    .subtitleabout{
+        font-size: 22px !important;
+        margin-bottom: 5px !important;
+    }
+    .paragraph {
+        font-size: 12px !important;
+    }
+    #imgMision{
+        width: 180px !important;
+        height: 150px !important;
+    }
+
+    #imgVision{
+        width: 180px !important;
+        height: 150px !important;
+    }
+
+    #imgScrum{
+        width: 200px;
+        height: 170px;
+    }
+    
+    #imgMicrosoft{
+        width: 220px;
+        height: 180px;
+    }
+
+    #imgMk{
+        width: 200px !important;
+        height: 180px !important;
+    }  
+}
+
+/*Ipad*/
+@media(max-height: 1369px) and (min-height: 1023px){
+    .banner_descripcion h1{
+        font-size: 3.6rem;
+    }
+    .slogan,  .slogan-cursor{
+        font-size: 2.7rem;
+    }
+    .description-footer{
+        font-size: 14px !important;
+    }
+
+    .btn-mas-informacion{
+        font-size: 30px;
+        width: 350px !important;
+    }
+
+    .subtitleabout{
+        font-size: 48px !important;
+        margin-bottom: 5px !important;
+    }
+    .paragraph {
+        font-size: 30px !important;
+    }
+    #imgMision{
+        width: 480px !important;
+        height: 450px !important;
+    }
+
+    #imgVision{
+        width: 580px !important;
+        height: 450px !important;
+    }
+
+    #imgScrum{
+        width: 500px;
+        height: 470px;
+    }
+    
+    #imgMicrosoft{
+        width: 520px;
+        height: 480px;
+    }
+
+    #imgMk{
+        width: 500px !important;
+        height: 480px !important;
+    }  
+
+    .btn-about{
+        font-size: 26px !important;
+        width: 300px !important;
+        height: 55px !important;
+    }
+}
+
+/*Iphone 14 and Pixel About*/
+@media(max-height: 933px) and (min-height: 740px){
+    .banner_descripcion h1{
+        font-size: 1.5rem;
+    }
+    .slogan,  .slogan-cursor{
+        font-size: 1.2rem;
+    }
+    .subtitleabout{
+        font-size: 38px !important;
+        padding: 30px;
+    }
+    .paragraph {
+        font-size: 19px !important;
+
+    }
+    #imgMision{
+        width: 300px !important;
+        height: 260px !important;
+    }
+    
+
+    #imgScrum{
+        width: 330px;
+        height: 270px;
+    }
+    #imgVision{
+        width: 320px !important;
+        height: 230px !important;
+    }
+    
+    #imgMicrosoft{
+        width: 280px;
+        height: 240px;
+    }
+
+    #imgMk{
+        width: 340px !important;
+        height: 320px !important;
+    } 
+}
+
+@media(max-height: 741px) and (min-height:639px){
+    .subtitleabout{
+        font-size: 30px !important;
+        padding: 15px;
+    }
+    .paragraph {
+        font-size: 16px !important;
+    }
+    #imgMision{
+        width: 300px !important;
+        height: 260px !important;
+    }
+    #imgVision{
+        width: 330px !important;
+        height: 230px !important;
+    }
+    #imgScrum{
+        width: 330px;
+        height: 310px;
+    }
+    #imgMicrosoft{
+        width: 280px;
+        height: 260px;
+    }
+
+    #imgMk{
+        width: 320px !important;
+        height: 310px !important;
+    } 
 }

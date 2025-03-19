@@ -2901,7 +2901,7 @@ ul li {
   color: #fff;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media only screen and (min-width:319px) and (max-width:768px) {
   .container-cardindex {
     flex-wrap: wrap;
   }
@@ -3376,6 +3376,34 @@ ul li {
 }
 
 /*fin slider clientes Mk*/
+
+#vacanciesTable {
+  width: 100% !important;
+  table-layout: auto; 
+}
+
+div[style*="overflow-x: auto"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+
+/* Definir proporciones de ancho */
+#vacanciesTable th:nth-child(1),
+#vacanciesTable td:nth-child(1) { /* Columna ID */
+    width: 26%;
+}
+
+#vacanciesTable th:nth-child(2),
+#vacanciesTable td:nth-child(2) { /* Columna Puesto */
+    width: 65%;
+}
+
+#vacanciesTable th:nth-child(3),
+#vacanciesTable td:nth-child(3) { 
+    width: 25%;
+}
+
 
 /*Tabla Planes marketing*/
 .divTableMk {
