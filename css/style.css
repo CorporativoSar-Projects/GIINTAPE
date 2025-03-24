@@ -3377,48 +3377,12 @@ ul li {
 
 /*fin slider clientes Mk*/
 
-#vacanciesTable {
-  width: 100% !important;
-  table-layout: auto; 
-}
-
-div[style*="overflow-x: auto"] {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-
-/* Definir proporciones de ancho */
-#vacanciesTable th:nth-child(1),
-#vacanciesTable td:nth-child(1) { /* Columna ID */
-    width: 26%;
-}
-
-#vacanciesTable th:nth-child(2),
-#vacanciesTable td:nth-child(2) { /* Columna Puesto */
-    width: 65%;
-}
-
-#vacanciesTable th:nth-child(3),
-#vacanciesTable td:nth-child(3) { 
-    width: 25%;
-}
-
-
-/*Tabla Planes marketing*/
-.divTableMk {
-  width: 100%;
-}
-
+/*Caracteristias generales de las tablas*/
 table {
-  width: 95%;
+  width: 80%;
   border-collapse: collapse;
-  margin: 30px auto;
+  margin: 20px auto;
   background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  overflow-x: auto;
-  display: block;
 }
 
 
@@ -3441,13 +3405,10 @@ td {
 }
 
 th {
-  background-color: #fb8500;
   color: white;
-  border: 1px solid #ddd !important;
 }
 
 td {
-  border: 1px solid #fb8500;
   padding: 10px;
   text-align: center;
   font-size: 18px;
@@ -3458,6 +3419,29 @@ tr {
   background-color: #f2f2f2;
   font-size: 18px;
 }
+
+
+
+/*
+Markerting Digital
+
+Tarjetas Marketing, datos ocultos
+*/
+.li-hidden{
+  display: none !important;
+}
+
+
+/*Tabla Planes marketing*/
+
+.logo-mobile {
+  display: none;
+}
+
+.divTableMk {
+  width: 100%;
+}
+
 
 .precio-row {
   font-size: 20px !important;
@@ -3477,6 +3461,21 @@ tr:hover {
   font-weight: bold;
 }
 
+.PreciosMarketing{
+  border-radius: 10px;
+  width: 95%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-x: auto;
+  display: block;
+
+}
+
+.PreciosMarketing td{
+  border: 1px solid #fb8500;
+}
 
 .mes-gratis {
   font-size: 32px;
@@ -3495,7 +3494,10 @@ tr:hover {
 .PreciosMarketing th {
   font-size: 20px;
   font-weight: bold;
-  padding: 20px 16px;
+  padding: 15px;
+  background-color: #fb8500;
+  border: 1px solid #ddd;
+
 
 }
 
@@ -3572,7 +3574,7 @@ tr:hover {
 .fila-botones td {
   border: none;
   text-align: center;
-  padding: 16px;
+  padding: 5px;
 }
 
 .PreciosMarketing .celdaBlanca {
@@ -3616,7 +3618,6 @@ tr:hover {
   justify-content: center;
   gap: 30px;
   width: 100%;
-  max-width: 1200px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -3855,7 +3856,7 @@ tr:hover {
 
 .tablePlanesDesarrollo tr:last-child td:nth-child(3) {
   border-bottom: 4px solid #219EBC !important;
-  /* Borde inferior */
+  /* Borde inferior del*/
 }
 
 .recomendado {
