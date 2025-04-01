@@ -289,7 +289,7 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
     <form action="contact.php?firstName=<?php echo $firstName; ?>&lastName=<?php echo $lastName; ?>&email=<?php echo $inputEmail; 
     ?>&telefono=<?php echo $inputPhone; ?>&AreaDeInteres=<?php echo $areaOfInterest; ?>&VacanteDeInteres=<?php echo $vacancyOfInterest; 
     ?>&SituacionProfesional=<?php echo $professionalSituation; ?>&TipoDePrestacion=<?php echo $typeOfService; 
-    ?>&trabajo=<?php echo $workActually; ?>&c=1" method="POST" enctype="multipart/form-data">
+    ?>&trabajo=<?php echo $workActually; ?>&c=1" method="POST" enctype="multipart/form-data" onsubmit="return validarRecaptcha();">
     
         <br>
         <div class="skills-container">
@@ -493,6 +493,16 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
             } else {
                 section.style.display = "none"; // Ocultar la sección
             }
+        }
+
+        function validarRecaptcha()
+        {
+          var response = grecaptcha.getResponse(); // Obtiene la respuesta del reCAPTCHA
+          if (response.length === 0) { // Si está vacío, no deja enviar el formulario
+            alert("Por favor, completa el reCAPTCHA antes de enviar el formulario.");
+            return false;
+          }
+          return true;
         }
     </script>
   
