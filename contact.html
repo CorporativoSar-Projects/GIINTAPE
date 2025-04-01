@@ -54,7 +54,7 @@
                 "Tecnologías de la Información": [
                     //"Asistente de Mesa de Soporte de TI",
                     //"Consultor Trainee en Microsoft 365",
-                    "Desarrollador Web Front-End",
+                    //"Desarrollador Web Front-End",
                     "Desarrollador Web Back-End"
                 ],
                 "Talento Humano": [
@@ -138,6 +138,7 @@
         padding: 10px;
         text-align: left;
         border: none !important;
+
     }
 
     /* Estilo para el filtro fijo */
@@ -146,6 +147,7 @@
         top: 0;
         background-color: white; /* Fondo blanco para el filtro */
         z-index: 2 ; /* Asegurarse de que esté sobre los encabezados */
+
     }
     
     /* Estilo para el filtro (input) */
@@ -240,6 +242,7 @@
         <table class="table table-hover table-bordered" id="vacanciesTable" style="width:100%;">
             <thead style="border:none !important; color:#023047;">
                 <th colspan="3" style="position: sticky; top: 0; background: white; z-index: 2; ">
+
                     <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
                     <input type="text" id="filter" placeholder="Busca una vacante de interés" style="width: 90%; padding: 5px; box-sizing: border-box; ">
                 </th>
@@ -302,7 +305,7 @@
     <br>
     <h2 class="subtitlecontac"><b>¡ÚNETE A NUESTRO EQUIPO!</b></h2>
     </center>
-    <form id="contact-form" enctype="multipart/form-data" action="contact.php?c=1" method="post">
+    <form id="contact-form" enctype="multipart/form-data" action="skillsContact.php" method="post">
       <div class="formBox">
         <div class="row50">
           <div class="inputBox">
@@ -362,11 +365,7 @@
           </div>
         </div>       
         <div class="row50">
-          <div class="inputBox">
-            <span style="color: rgb(238, 234, 234);">Adjunta tu CV*: </span>
-            <input style="font-size:  10px;" type="file" id="btn-file" name="cv" accept=".pdf, .doc, .docx" required>
-            <p id="file-error" style="color: red; display: none;">Por favor, adjunta un archivo en formato PDF, DOC o DOCX con un tamaño máximo de 5 MB.</p>
-          </div>
+          
           <div id="checJobCurrent" class="inputBox">
             <span style="color: white;">¿Trabajas actualmente?:</span>
             <input type="checkbox" class="toggle" id="check" name="trabajo" value="Si">
@@ -392,11 +391,13 @@
         </object>
       </div>
       </div>
+      <!--
       <div class="g-recaptcha" data-sitekey="6Ld7FqsqAAAAABJq7tGF-AIvOWPtiEl0Q51lYvhw"></div>
+      -->
       <br>
       <div class="row100">
         <div class="inputBox">
-          <input type="submit" style="border:1px solid white;" value="Enviar">
+          <input type="submit"  value="Siguiente">
         </div>
       </div>
      </div>
