@@ -378,7 +378,6 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                   Inicio
                 </a>
               </li>
-
               <!--
               <li>
                 <a style="font-size: 23px" href="about.html">
