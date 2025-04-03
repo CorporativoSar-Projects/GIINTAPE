@@ -292,16 +292,19 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
     ?>&trabajo=<?php echo $workActually; ?>&c=1" method="POST" enctype="multipart/form-data" onsubmit="return validarRecaptcha();">
     
         <br>
-        <div class="skills-container">
+  <div class="skills-container">
     <div class="skills-column">
-        <h3 class="toggle-skills" onclick="toggleSkills('hardSkillsSection')">Hard Skills<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-        </svg></h3>
+        <h3 class="toggle-skills" onclick="toggleSkills('hardSkillsSection')">Hard Skills
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </h3>
         <div id="hardSkillsSection" class="skills-section">
             <?php foreach ($habilidades['hardSkills'] as $skill): ?>
                 <div>
                     <label for="<?php echo $skill; ?>"><?php echo $skill; ?>:</label>
-                    <select name="hardSkills[<?php echo $skill; ?>]" id="<?php echo $skill; ?>">
+                    <select name="hardSkills[<?php echo $skill; ?>]" id="<?php echo $skill; ?>" required>
+                        <option value="">Seleccione una opción</option>
                         <option value="0">No lo conozco</option>
                         <option value="1">Conozco solo teoría</option>
                         <option value="2">Principiante</option>
@@ -323,13 +326,14 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
             <?php foreach ($habilidades['softSkills'] as $skill): ?>
                 <div>
                     <label for="<?php echo $skill; ?>"><?php echo $skill; ?>:</label>
-                    <select name="softSkills[<?php echo $skill; ?>]" id="<?php echo $skill; ?>">
-                        <option value="0">No lo conozco</option>
-                        <option value="1">Conozco solo teoría</option>
-                        <option value="2">Principiante</option>
-                        <option value="3">Intermedio</option>
-                        <option value="4">Avanzado</option>
-                        <option value="5">Experto</option>
+                    <select name="softSkills[<?php echo $skill; ?>]" id="<?php echo $skill; ?>" required>
+                      <option value="">Seleccione una opción</option>
+                      <option value="0">No lo conozco</option>
+                      <option value="1">Conozco solo teoría</option>
+                      <option value="2">Principiante</option>
+                      <option value="3">Intermedio</option>
+                      <option value="4">Avanzado</option>
+                      <option value="5">Experto</option>
                     </select>
                 </div>
             <?php endforeach; ?>
@@ -379,7 +383,7 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                 </a>
               </li>
 
-              <!--
+              
               <li>
                 <a style="font-size: 23px" href="about.html">
                   Informaci&oacute;n
@@ -395,9 +399,9 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                   Desarrollo de Software
                 </a>
               </li>
-              -->
+              
               <li>
-                <a style="font-size: 23px;" href="https://giintapeinnovahue.freshdesk.com/support/home">
+                <a style="font-size: 23px;" href="soporteTecnico.html">
                   Soporte técnico
                 </a>
               </li>
