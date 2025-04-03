@@ -31,33 +31,52 @@
   color: #fff;
 }
 
-.container-bar a:hover {
-  background: #1c1c1c;
 
-}
 
 .container-bar .fa-facebook {
-  background: #3b5998;
+  background: #219EBC;
   border-radius: 0px 5px 0px 0px;
 }
 
+.container-bar .fa-facebook:hover {
+  background: white !important;
+  color: #219EBC;
+  
+}
+
 .container-bar .fa-instagram {
-  background: #ff00d0;
+  background: #ffb703;
+}
+
+.container-bar .fa-instagram:hover {
+  background: white !important;
+  color: #ffb703;
 }
 
 
 .container-bar .fa-envelope {
-  background: #ee0000;
+  background: #FB8500;
 }
 
+.container-bar .fa-envelope:hover {
+  background: white !important;
+  color: #FB8500;
+}
+
+
 .container-bar .fa-whatsapp {
-  background: #2ccd1e;
+  background: #8ECAE6;
   border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar .fa-whatsapp:hover {
+  background: white !important;
+  color: #8ECAE6;
 }
 
 .container-bar #title {
   position: absolute;
-  background: #1c1c1c;
+  /*background: #eb7878;*/
   padding: 0px 8px;
   height: 30px;
   line-height: 30px;
@@ -70,6 +89,20 @@
   opacity: 0;
   visibility: hidden;
   z-index: -1;
+  color: white;
+}
+
+.facebookLetter{
+  background: #219EBC;
+}
+.instagramLetter{
+  background: #ffb703;
+}
+.correoLetter{
+  background: #FB8500;
+}
+.whatsappLetter{
+  background: #8ECAE6;
 }
 
 .container-bar a:hover #title {
@@ -82,7 +115,7 @@
   position: absolute;
   content: '';
   border-left: 7px solid transparent;
-  border-right: 6px solid #1c1c1c;
+  border-right: 6px solid #8ECAE6;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   right: 100%;
@@ -110,7 +143,7 @@
 .icon-social {
   transition: all 0.4s;
   transform: translateX(0%);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 10px rgba(217, 86, 86, 0.3);
 }
 
 #btn-social:checked~.icon-social {
@@ -3427,7 +3460,7 @@ Markerting Digital
 
 Tarjetas Marketing, datos ocultos
 */
-.li-hidden{
+.li-hidden {
   display: none !important;
 }
 
@@ -3461,7 +3494,7 @@ tr:hover {
   font-weight: bold;
 }
 
-.PreciosMarketing{
+.PreciosMarketing {
   border-radius: 10px;
   width: 95%;
   border-collapse: collapse;
@@ -3473,7 +3506,7 @@ tr:hover {
 
 }
 
-.PreciosMarketing td{
+.PreciosMarketing td {
   border: 1px solid #fb8500;
 }
 
@@ -3743,7 +3776,7 @@ tr:hover {
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .floating-btn-mk:hover {
@@ -3824,6 +3857,9 @@ tr:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  overflow-x: auto;
+  display: block;
 }
 
 .tablePlanesDesarrollo th {
@@ -3942,21 +3978,25 @@ input select {
   width: 90%;
 }
 
-.last-price{
+.last-price {
   margin-top: 35px !important;
 }
 
-.hours{
+.hours {
   font-size: .9em;
   font-weight: bold;
   color: #555;
   text-align: center;
 }
 
-.divSoporte{
+.divSoporte {
   margin-bottom: 80px;
 }
 
-.selectiveYellowBK{
+.selectiveYellowBK {
   background: #ffb703;
+}
+
+.slider-hidden{
+  display: none;
 }

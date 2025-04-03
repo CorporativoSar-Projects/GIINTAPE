@@ -613,6 +613,11 @@ Pantallas de tablet
         font-size: 15px !important;
     }
 
+    /*Desarrollo web*/
+
+    .slider__vidweb{
+        width: 90% !important;
+    }
 
 }
 
@@ -620,7 +625,9 @@ Pantallas de tablet
 Pantallas de celular
 */
 
-@media (max-width: 426px) {
+
+
+@media (max-width: 444px) {
 
     /* Home */
     .gallery img {
@@ -823,7 +830,7 @@ Pantallas de celular
 
     }
 
-    /* Dstos ocultos */
+    /* Dstos ocultos en cards */
     .li-hidden{
         display: block !important;
     }
@@ -831,6 +838,44 @@ Pantallas de celular
         display: none;
     }
 
+    
+    /*Desarrollo web*/
+
+    .comparison-container > h3, .tablePlanesDesarrollo, .floating-btn{
+        display: none !important;
+    }
+
+    .info-soporte{
+        padding: 30px;
+        font-size: 14px;
+    }
+
+
+    /*Portafolio de desarrollo web*/
+
+    .slider__arrowweb{
+        z-index: 10000;
+    }
+    .subtitleweb{
+       font-size: 24px ; 
+    }
+    .slider__reviewweb{
+        font-size: 15px;
+        height: 320px;
+    }
+    .slider__vidweb{
+        width: 85% !important;
+        
+    } 
+
+    .slider-desactive{
+        display: none;
+    }
+
+    .slider-hidden{
+        display: block;
+        width: 90% !important;
+    }
 
 }
 
@@ -913,7 +958,6 @@ Pantallas de celular
     .logo-mobile {
         display: block;
         width: 100% !important;
-        height: 90vh !important;
     }
 
 }
@@ -935,6 +979,15 @@ Pantallas de celular
         background-color: #ffb703;
        
     } */
+
+    .slider__reviewweb{
+        height: 290px;
+        font-size: 13px;
+    }
+
+    .slider-hidden{
+        width: 98% !important;
+    }
 }
 
 
