@@ -3471,6 +3471,10 @@ Tarjetas Marketing, datos ocultos
   display: none;
 }
 
+.banner-tablet{
+  display: none;
+}
+
 .divTableMk {
   width: 100%;
 }
