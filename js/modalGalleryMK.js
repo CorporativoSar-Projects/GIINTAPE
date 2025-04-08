@@ -1,9 +1,9 @@
 let images = [
-    "images/FeedCeroes3.svg",
-    "images/FeedFlakos.svg",
-    "images/FeedNachilis.svg",
-    "images/FeedVillasMalaki.svg",
-    "images/Feed_Giintape.svg"
+    "images/marketing/FeedCeroes3.svg",
+    "images/marketing/FeedFlakos.svg",
+    "images/marketing/FeedNachilis.svg",
+    "images/marketing/FeedVillasMalaki.svg",
+    "images/marketing/Feed_Giintape.svg"
 ];
 
 let currentIndex = 0;
