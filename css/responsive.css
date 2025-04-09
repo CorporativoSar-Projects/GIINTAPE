@@ -1238,3 +1238,52 @@ Pantallas de celular
         height: 310px !important;
     }
 }
+
+/*Pantallas grandes*/
+
+@media(max-width: 2561px) and (min-width: 1500px){
+    /*Pagina About*/
+    .textabout_descripcion{
+        width: 40%;
+    }
+    .subtitleabout{
+        font-size: 4rem !important;
+    }
+
+    .paragraph{
+        font-size: 2.2rem !important;
+        margin: 40px !important;
+    }
+
+    .btn-about{
+        font-size: 2.2rem !important;
+        height: auto !important;
+        width: auto !important;
+        padding: 15px !important;
+    }
+
+    #imgMision{
+        width: 600px !important;
+        height: auto !important;
+    }
+
+    #imgVision{
+        width: 800px !important;
+        height: auto !important;
+    }
+
+    #imgScrum{
+        width: 700px !important;
+        height: auto !important;
+    }
+
+    #imgMicrosoft{
+        width: 700px !important;
+        height: auto !important;
+    }
+
+    #imgMk{
+        width: 600px !important;
+        height: auto !important;
+    }
+}
