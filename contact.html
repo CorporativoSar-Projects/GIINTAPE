@@ -45,11 +45,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="canonical" href="https://giintapeinnovahue.com/contact.html">
+
+  <title>Talento Giintape Innovahue</title>
+
   <script>
         document.addEventListener("DOMContentLoaded", function() {
             var vacancyObject = {
                 "Marketing Digital": [
-                    "Creador de contenido"
+                    "Copy & Content Creator"
                 ],
                 "Tecnologías de la Información": [
                     //"Asistente de Mesa de Soporte de TI",
@@ -98,7 +101,6 @@
             });
         });
     </script>
-    <title>TALENTO INNOVHAUE | Únete a nuestro equipo en Giintape Innovahue | Marketing Digital | Software | Microsoft 365</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
@@ -156,6 +158,10 @@
         padding: 8px;
         box-sizing: border-box;
     }
+
+    .nav-item{
+      text-align: center;
+    }
 </style>
 <body>
   <!--Barra Redes-->
@@ -181,12 +187,14 @@
 
 
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- end header section -->
     <header class="header_section">
+      <!-- Nav bar section -->
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logogiintape.png" width="40" height=auto>
+            <img src="images/logogiintape.png" width="40" height=auto
+              alt="Giintape innovahue agencia de publicidad cdmx">
             <span>
               GIINTAPE
             </span>
@@ -196,12 +204,11 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
@@ -216,21 +223,23 @@
                       <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="soporteTecnico.html">Soporte técnico</a>
+                      <a class="nav-link" href="soporteTecnico.html">Soporte Técnico</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html"> Talento INNOVAHUE </a>
+                  <a class="nav-link" href="contact.html">Talento INNOVAHUE</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
+      <!-- End Nav bar section  -->
     </header>
     <!-- end header section -->
   </div>
+
 
   <br>
   <!-- Contac section-->
@@ -243,7 +252,7 @@
         <table class="table table-hover table-bordered" id="vacanciesTable" style="width:100%;">
             <thead style="border:none !important; color:#023047;">
                 <th colspan="3" style="position: sticky; top: 0; background: white; z-index: 2; ">
-
+                  
                     <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
                     <input type="text" id="filter" placeholder="Busca una vacante de interés" style="width: 90%; padding: 5px; box-sizing: border-box; ">
                 </th>
@@ -263,7 +272,7 @@
                 </tr>
                 <tr>
                     <td id="tdVacancy">DMKT-CCC-0003</td>
-                    <td id="tdVacancy">Creador de Contenido</td>
+                    <td id="tdVacancy">Copy & Content Creator</td>
                     <td id="tdVacancy"><a id="jobVacancy" href="https://giintapeinnovahueteam.sharepoint.com/:b:/s/DireccindeTalentoHumano/EZHZKaWPeT1PhmcyHeliwhYB9DOCgtDLZRdnR1gyw9p-aQ?e=qEDXNH" target="_blank">Ver</a></td>
                 </tr>
                 <tr>
@@ -384,17 +393,24 @@
       </div>
 
       <div id="privacyModal" class="modalAviso">
-      <div class="modal-content1">
-        <span class="closeAviso" id="privacyClose">&times;</span>
-        <h2>Aviso de privacidad de datos</h2>
-        <object data="\aviso.pdf" type="application/pdf" width="100%" height="400px">
-          <p>Da click <a href="\aviso.pdf" target="_blank">descargar aviso de privacidad</a>, para descargar nuestro aviso en PDF. Si quieres visualizarlo en línea, por favor abre este sitio web en tu computadora o tablet.</p>
-        </object>
+        <div class="modal-content1">
+          <span class="closeAviso" id="privacyClose">&times;</span>
+          <h2>Aviso de privacidad de datos</h2>
+      
+          <div id="pdfContent">
+            <object data="aviso.pdf" type="application/pdf" width="100%" height="400px">
+              <p>Da click <a href="aviso.pdf" target="_blank">aquí</a> para descargar el aviso de privacidad.</p>
+            </object>
+          </div>
+      
+          <div id="mobileContent" style="display: none;">
+            <p>Da click <a href="aviso.pdf" download> aquí</a> para descargar nuestro aviso de privacidad en PDF.</p>
+          </div>
+      
+        </div>
       </div>
-      </div>
-      <!--
-      <div class="g-recaptcha" data-sitekey="6Ld7FqsqAAAAABJq7tGF-AIvOWPtiEl0Q51lYvhw"></div>
-      -->
+      
+  
       <br>
       <div class="row100">
         <div class="inputBox">
@@ -467,7 +483,7 @@
                 <li>
                   <a style="font-size: 23px;" href="soporteTecnico.html"
                     class="nav-footer">
-                    Soporte técnico
+                    Soporte Técnico
                   </a>
                 </li>
                 <li>
@@ -567,5 +583,11 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/vaca.js"></script>
+  <script>
+    if (window.innerWidth <= 768) {
+      document.getElementById('pdfContent').style.display = 'none';
+      document.getElementById('mobileContent').style.display = 'block';
+    }
+  </script>
 </body>
 </html>

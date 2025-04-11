@@ -457,6 +457,11 @@ Pantallas de tablet
 
 @media (max-width: 769px) {
 
+    /*Barra de Navegacion*/
+    .container-bar {
+        z-index: 10000;
+    }
+
     /*Footer*/
     #footer {
         height: 680px;
@@ -615,7 +620,7 @@ Pantallas de tablet
 
     /*Desarrollo web*/
 
-    .slider__vidweb{
+    .slider__vidweb {
         width: 90% !important;
     }
 
@@ -624,9 +629,6 @@ Pantallas de tablet
 /*
 Pantallas de celular
 */
-
-
-
 @media (max-width: 444px) {
 
     /* Home */
@@ -736,6 +738,19 @@ Pantallas de celular
     }
 
     /*Marketing Digital*/
+
+    /*Banner de marketing*/
+    #banner-lap{
+        display: none;
+    }
+    .banner-tablet{
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+        width: 100%;
+    }
+
     .floating-btn-mk {
         padding: 6px 10px;
         font-size: 10px;
@@ -831,21 +846,26 @@ Pantallas de celular
     }
 
     /* Dstos ocultos en cards */
-    .li-hidden{
+    .li-hidden {
         display: block !important;
     }
-    .divTableMk, .seccionmk, .floating-btn-mk{
+
+    .divTableMk,
+    .seccionmk,
+    .floating-btn-mk {
         display: none;
     }
 
-    
+
     /*Desarrollo web*/
 
-    .comparison-container > h3, .tablePlanesDesarrollo, .floating-btn{
+    .comparison-container>h3,
+    .tablePlanesDesarrollo,
+    .floating-btn {
         display: none !important;
     }
 
-    .info-soporte{
+    .info-soporte {
         padding: 30px;
         font-size: 14px;
     }
@@ -853,26 +873,28 @@ Pantallas de celular
 
     /*Portafolio de desarrollo web*/
 
-    .slider__arrowweb{
+    .slider__arrowweb {
         z-index: 10000;
     }
-    .subtitleweb{
-       font-size: 24px ; 
+
+    .subtitleweb {
+        font-size: 24px;
     }
-    .slider__reviewweb{
+
+    .slider__reviewweb {
         font-size: 15px;
         height: 320px;
     }
-    .slider__vidweb{
-        width: 85% !important;
-        
-    } 
 
-    .slider-desactive{
-        display: none;
+    .slider__vidweb {
+        width: 85% !important;
+
     }
 
-    .slider-hidden{
+    .slider-desactive {
+        display: none;
+    }
+    .slider-hidden {
         display: block;
         width: 90% !important;
     }
@@ -980,19 +1002,20 @@ Pantallas de celular
        
     } */
 
-    .slider__reviewweb{
+    .slider__reviewweb {
         height: 290px;
         font-size: 13px;
     }
 
-    .slider-hidden{
+    .slider-hidden {
         width: 98% !important;
     }
 }
 
 
 /*Ipad*/
-@media(max-height: 1369px) and (min-height: 1023px) {
+@media(max-height: 1370px) and (min-height: 1022px) {
+
     .banner_descripcion h1 {
         font-size: 3.6rem;
     }
@@ -1050,12 +1073,68 @@ Pantallas de celular
         width: 300px !important;
         height: 55px !important;
     }
+
+    /*Banner Marketing*/
+
+    #banner-lap {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: none !important;
+    }
+
+    .banner-tablet {
+        display: block;
+        /*background-color: #ffb703;*/
+        width: 100% !important;
+    }
+
+
+
+}
+
+/*Ipad Pro*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+    #banner-lap {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: none !important;
+    }
+
+    .banner-tablet {
+        display: block;
+        width: 100% !important;
+    }
+
+}
+
+/*Surface Duo*/
+/*Ipad Pro*/
+@media only screen and (min-device-width: 539px) and (max-device-width: 870px) and (orientation: portrait) {
+
+    #banner-lap {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: none !important;
+    }
+
+    .banner-tablet {
+        display: block;
+        width: 100% !important;
+    }
+
 }
 
 /*Iphone 14 and Pixel About*/
 @media(max-height: 933px) and (min-height: 740px) {
     .banner_descripcion h1 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
 
     .slogan,
@@ -1111,6 +1190,15 @@ Pantallas de celular
     .pricing-card {
         width: 80%;
     }
+
+    /*Banner Marketing*/
+    .logo-mobile {
+        display: block;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    
 }
 
 @media(max-height: 741px) and (min-height:639px) {
@@ -1146,5 +1234,54 @@ Pantallas de celular
     #imgMk {
         width: 320px !important;
         height: 310px !important;
+    }
+}
+
+/*Pantallas grandes*/
+
+@media(max-width: 2561px) and (min-width: 1500px){
+    /*Pagina About*/
+    .textabout_descripcion{
+        width: 60%;
+    }
+    .subtitleabout{
+        font-size: 2.5rem !important;
+    }
+
+    .paragraph{
+        font-size: 1.2rem !important;
+        margin: 40px !important;
+    }
+
+    .btn-about{
+        font-size: 1.2rem !important;
+        height: auto !important;
+        width: auto !important;
+        padding: 15px !important;
+    }
+
+    #imgMision{
+        width: 500px !important;
+        height: auto !important;
+    }
+
+    #imgVision{
+        width: 500px !important;
+        height: auto !important;
+    }
+
+    #imgScrum{
+        width: 500px !important;
+        height: auto !important;
+    }
+
+    #imgMicrosoft{
+        width: 500px !important;
+        height: auto !important;
+    }
+
+    #imgMk{
+        width: 500px !important;
+        height: auto !important;
     }
 }

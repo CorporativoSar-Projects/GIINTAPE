@@ -598,7 +598,7 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 10px 40px;
   color: #ffffff;
-  text-align: center;
+  text-align: center !important;
   position: relative;
 }
 
@@ -991,38 +991,18 @@ table th {
 
 .slogan {
   font-size: 1.4rem;
-  font-style: italic;
   text-align: center;
   color: #FB8500;
   background: white;
   letter-spacing: 1px;
   border-radius: 10px;
   text-transform: none;
-}
-
-.slogan-cursor {
-  color: #FB8500;
-  font-size: 1.8rem;
-  font-style: italic;
+  
 }
 
 .div-type {
   margin-bottom: 35px;
 }
-
-/* Keyframes para el efecto de brillo en el texto 
-@keyframes glowText {
-  0% {
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    text-shadow: 0px 0px 20px #FFB703;
-  }
-  100% {
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
-  }
-}
-*/
 
 
 .bannerabout {
@@ -1035,9 +1015,6 @@ table th {
 }
 
 #sec0.bannerabout {
-  /*background-image: url('../images/giintape.gif') !important;
-  background-size: cover;  
-  min-height: 500px;*/
   position: relative;
   width: 100%;
   min-height: 500px;
@@ -1069,9 +1046,6 @@ table th {
 }
 
 #sec3.bannerabout {
-  /*background-image: url('../images/giintape.gif') !important;
-  background-size: cover;  
-  min-height: 500px;*/
   position: relative;
   width: 100%;
   min-height: 500px;
@@ -3114,25 +3088,16 @@ ul li {
 /* The Modal (background) */
 .modalAviso {
   display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
+  position: fixed !important;
+  z-index: 9999;
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
   vertical-align: middle !important;
 }
 
@@ -3468,6 +3433,10 @@ Tarjetas Marketing, datos ocultos
 /*Tabla Planes marketing*/
 
 .logo-mobile {
+  display: none;
+}
+
+.banner-tablet{
   display: none;
 }
 

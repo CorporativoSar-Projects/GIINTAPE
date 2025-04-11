@@ -133,8 +133,6 @@
                   Inicio
                 </a>
               </li>
-
-              <!--
               <li>
                 <a style="font-size: 23px" href="about.html">
                   Informaci&oacute;n
@@ -150,10 +148,9 @@
                   Desarrollo de Software
                 </a>
               </li>
-              -->
               <li>
-                <a style="font-size: 23px;" href="https://giintapeinnovahue.freshdesk.com/support/home">
-                  Soporte técnico
+                <a style="font-size: 23px;" href="soporteTecnico.html">
+                  Soporte Técnico
                 </a>
               </li>
               <li>
