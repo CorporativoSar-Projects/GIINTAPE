@@ -598,7 +598,7 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 10px 40px;
   color: #ffffff;
-  text-align: center;
+  text-align: center !important;
   position: relative;
 }
 
@@ -997,6 +997,7 @@ table th {
   letter-spacing: 1px;
   border-radius: 10px;
   text-transform: none;
+  
 }
 
 .div-type {
@@ -1014,9 +1015,6 @@ table th {
 }
 
 #sec0.bannerabout {
-  /*background-image: url('../images/giintape.gif') !important;
-  background-size: cover;  
-  min-height: 500px;*/
   position: relative;
   width: 100%;
   min-height: 500px;
@@ -1048,9 +1046,6 @@ table th {
 }
 
 #sec3.bannerabout {
-  /*background-image: url('../images/giintape.gif') !important;
-  background-size: cover;  
-  min-height: 500px;*/
   position: relative;
   width: 100%;
   min-height: 500px;

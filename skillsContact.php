@@ -21,7 +21,7 @@ $vacantes = [
         'hardSkills' => ['Evaluación de desempeño y clima laboral','Diseño y ejecución de planes de capacitación','Implementación de estrategias de cultura organizacional','Análisis de métricas de RRHH (rotación, satisfacción, etc.)','Herramientas de colaboración (Teams, formularios, etc.)'],
         'softSkills' => ['Pensamiento estratégico y visión de negocio','Atención al detalle y ortografía','Empatía y escucha activa','Capacidad de análisis e interpretación de datos','Trabajo en equipo y colaboración']
     ],
-    'Analista de Operaciones' => [
+    'Asistente de Operaciones' => [
         'hardSkills' => ['Manejo de Excel y análisis de datos','Documentación de procesos y flujos de trabajo','Optimización de procesos internos','Creación y seguimiento de indicadores de desempeño (KPIs)','Gestión de calidad y control de procesos'],
         'softSkills' => ['Resolución de problemas y toma de decisiones','Atención al detalle y ortografía','Pensamiento analítico y crítico','Comunicación efectiva y asertiva','Adaptabilidad a cambios y mejora continua']
     ]
@@ -246,14 +246,10 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                 <li class="nav-item ">
                   <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <!--
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> Informaci&oacute;n </a>
                 </li>
-                -->
-
-                <!--
-                <li class="nav-item">
+                <li class="nav-item" style="text-align: center;">
                   <a class="nav-link">Servicios </a>
                   <ul>
                     <li class="nav-item">
@@ -262,14 +258,13 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                     <li class="nav-item">
                       <a class="nav-link" href="desarrolloweb.html">Desarrollo de Software</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="soporteTecnico.html">Soporte Técnico</a>
+                    </li>
                   </ul>
                 </li>
-                -->
-                <li class="nav-item">
-                  <a class="nav-link" href="https://giintapeinnovahue.freshdesk.com/support/home" target="_blank">Soporte técnico</a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html"> Talento INNOVAHUE </a>
+                  <a class="nav-link" href="contact.html">Talento INNOVAHUE </a>
                 </li>
               </ul>
             </div>
@@ -378,7 +373,6 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                   Inicio
                 </a>
               </li>
-              <!--
               <li>
                 <a style="font-size: 23px" href="about.html">
                   Informaci&oacute;n
@@ -394,10 +388,9 @@ $workActually = isset($_POST['trabajo']) ? 'Si' : 'No';
                   Desarrollo de Software
                 </a>
               </li>
-              -->
               <li>
                 <a style="font-size: 23px;" href="https://giintapeinnovahue.freshdesk.com/support/home">
-                  Soporte técnico
+                  Soporte Técnico
                 </a>
               </li>
               <li>

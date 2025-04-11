@@ -1136,7 +1136,7 @@ Pantallas de celular
 /*Iphone 14 and Pixel About*/
 @media(max-height: 933px) and (min-height: 740px) {
     .banner_descripcion h1 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
 
     .slogan,
@@ -1244,46 +1244,46 @@ Pantallas de celular
 @media(max-width: 2561px) and (min-width: 1500px){
     /*Pagina About*/
     .textabout_descripcion{
-        width: 40%;
+        width: 60%;
     }
     .subtitleabout{
-        font-size: 4rem !important;
+        font-size: 2.5rem !important;
     }
 
     .paragraph{
-        font-size: 2.2rem !important;
+        font-size: 1.2rem !important;
         margin: 40px !important;
     }
 
     .btn-about{
-        font-size: 2.2rem !important;
+        font-size: 1.2rem !important;
         height: auto !important;
         width: auto !important;
         padding: 15px !important;
     }
 
     #imgMision{
-        width: 600px !important;
+        width: 500px !important;
         height: auto !important;
     }
 
     #imgVision{
-        width: 800px !important;
+        width: 500px !important;
         height: auto !important;
     }
 
     #imgScrum{
-        width: 700px !important;
+        width: 500px !important;
         height: auto !important;
     }
 
     #imgMicrosoft{
-        width: 700px !important;
+        width: 500px !important;
         height: auto !important;
     }
 
     #imgMk{
-        width: 600px !important;
+        width: 500px !important;
         height: auto !important;
     }
 }
