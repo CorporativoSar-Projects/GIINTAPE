@@ -629,7 +629,6 @@ Pantallas de tablet
 /*
 Pantallas de celular
 */
-
 @media (max-width: 444px) {
 
     /* Home */
@@ -895,7 +894,6 @@ Pantallas de celular
     .slider-desactive {
         display: none;
     }
-
     .slider-hidden {
         display: block;
         width: 90% !important;
