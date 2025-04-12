@@ -9,7 +9,7 @@ $vacantes = [
         'hardSkills' => ['Técnicas de ventas y negociación', 'Prospección de clientes', 'Elaboración de propuestas comerciales', 'Seguimiento post-venta o fidelización', 'Atención a clientes'],
         'softSkills' => ['Comunicación persuasiva y escucha activa', 'Resiliencia y manejo de objeciones', 'Trabajo en equipo y colaboración', 'Atención al detalle y ortografía', 'Orientado a resultados']
     ],
-    'Copy & Content Creator' => [
+    'Creador de Contenido' => [
         'hardSkills' => ['Redacción persuasiva y storytelling', 'Creación de contenido para redes sociales', 'Herramientas de edición (Canva / Photoshop)', 'Adaptación de tono y estilo a la marca', 'Analítica web y métricas'],
         'softSkills' => ['Creatividad e innovación', 'Atención al detalle y ortografía', 'Trabajo en equipo y colaboración', 'Organización y gestión de múltiples contenidos', 'Capacidad de investigación y análisis']
     ],

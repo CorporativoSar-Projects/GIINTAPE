@@ -23,18 +23,19 @@
   ];
 
   // Obtención de datos del formulario
-  $firstName = utf8_encode($_GET['firstName']);
-  $lastName = utf8_encode($_GET['lastName']);
-  $inputEmail = utf8_encode($_GET['email']);
-  $inputPhone = utf8_encode($_GET['telefono']);
-  $areaOfInterest = utf8_encode($_GET['AreaDeInteres']);
-  $vacancyOfInterest = utf8_encode($_GET['VacanteDeInteres']);
-  $professionalSituation = utf8_encode($_GET['SituacionProfesional']);
-  $typeOfService = utf8_encode($_GET['TipoDePrestacion']);
+  $firstName = ($_GET['firstName']);
+  $lastName = ($_GET['lastName']);
+  $inputEmail = ($_GET['email']);
+  $inputPhone = ($_GET['telefono']);
+  $areaOfInterest = ($_GET['AreaDeInteres']);
+  $vacancyOfInterest = ($_GET['VacanteDeInteres']);
+  $professionalSituation = ($_GET['SituacionProfesional']);
+  $typeOfService = ($_GET['TipoDePrestacion']);
   $workActually = isset($_GET['trabajo']) ? 'Si' : 'No';
   $cv = $_FILES['cv'];
   //$cv_tmp = $_GET['cv_tmp'];
   //$cv_name = $_GET['cv_name'];
+
 
   $correo = $_GET['c'];
   $mainEmail = "contacto@giintapeinnovahue.com";
