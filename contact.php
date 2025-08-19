@@ -157,7 +157,7 @@ $mailToCandidate->Send();
         $correo = 0;
         
         // Mostrar modal de éxito o redirigir
-        require("modalTest.php");
+        require("modal.php");
     } else {
         // En caso de error en el envío al equipo
         // var m=document.getElementById('alertSuccess'); m.style.setProperty('display','block','important');

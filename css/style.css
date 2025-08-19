@@ -45,22 +45,22 @@
 }
 
 .container-bar .fa-instagram {
-  background: #ffb703;
+  background: #8ECAE6;
 }
 
 .container-bar .fa-instagram:hover {
   background: white !important;
-  color: #ffb703;
+  color: #8ECAE6;
 }
 
 
 .container-bar .fa-envelope {
-  background: #FB8500;
+  background: #219EBC;
 }
 
 .container-bar .fa-envelope:hover {
   background: white !important;
-  color: #FB8500;
+  color: #219EBC;
 }
 
 
@@ -96,10 +96,10 @@
   background: #219EBC;
 }
 .instagramLetter{
-  background: #ffb703;
+  background: #8ECAE6;
 }
 .correoLetter{
-  background: #FB8500;
+  background: #219EBC;
 }
 .whatsappLetter{
   background: #8ECAE6;
@@ -992,8 +992,7 @@ table th {
 .slogan {
   font-size: 1.4rem;
   text-align: center;
-  color: #FB8500;
-  background: white;
+  color: white;
   letter-spacing: 1px;
   border-radius: 10px;
   text-transform: none;
@@ -1004,24 +1003,8 @@ table th {
   margin-bottom: 35px;
 }
 
-
-.bannerabout {
-  width: 100%;
-  height: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 #sec0.bannerabout {
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  background: linear-gradient(to bottom, #023047 10%, #0b4c6c 100%);
 }
 
 #video_background {
@@ -1036,38 +1019,28 @@ table th {
 }
 
 #sec1.textabout {
-  background: linear-gradient(to bottom, #e6f7c9, #d9f7c9);
-  height: 100%;
+  background: linear-gradient(to bottom, #0b4c6c 0%, #219EBC 100%);
 }
 
 #sec2.textabout {
-  background: linear-gradient(to bottom, #d9f7c9, rgb(210, 250, 242), #A8DADC);
-  height: 100%;
+  background: linear-gradient(to bottom, #219EBC 20%, #2fb4cc 100%);
+  
 }
 
 #sec3.bannerabout {
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  background: linear-gradient(to bottom, #2fb4cc 10%, #5dc6e8 90%);
 }
 
 #sec4.textabout {
-  background: linear-gradient(to bottom, #A8DADC, rgb(210, 249, 250));
-  height: 100%;
+  background: linear-gradient(to bottom, #5dc6e8 10%, #2fb4cc 80%);
 }
 
 #sec5.textabout {
-  background: linear-gradient(to bottom, rgb(210, 249, 250), #f9f3ae);
-  height: 100%;
+  background: linear-gradient(to bottom, #2fb4cc 20%, #219EBC 100%);
 }
 
 #sec6.textabout {
-  background: linear-gradient(to bottom, #f9f3ae, #ffc27b);
-  height: 100%;
+  background: linear-gradient(to bottom,#219EBC 50%, #023047 100%);
 }
 
 .banner_descripcion {
@@ -1077,7 +1050,7 @@ table th {
   max-width: 1000px;
   display: block;
   margin: auto;
-  background-color: white;
+  background-color:rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 40px;
   border-radius: 10px;
@@ -1101,7 +1074,7 @@ table th {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #00000000;
+  color: white !important;
   text-align: center;
 }
 
@@ -1134,14 +1107,14 @@ html {
   margin-bottom: 5px;
   text-align: center;
   border-radius: 10px;
-  color: #1D3557;
+  color: white;
 }
 
 .textabout p {
   position: center fixed;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #141c1d;
+  color: white;
   text-align: justify;
   border-radius: 20px;
 }
@@ -1159,6 +1132,10 @@ html {
 .btn-mas-informacion {
   color: white;
   width: 175px !important;
+  border: none !important;
+}
+.btn-about {
+    border: none !important;
 }
 
 @media screen and (max-width:1150px) {
@@ -2237,8 +2214,8 @@ html {
 
 .nav-options {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .info_section .info-nav ul {
@@ -2505,6 +2482,27 @@ ul li {
 .info-logo p {
   font-size: 15px;
 }
+
+#logo-infoFooter{
+  display: flex;
+}
+
+#logo-infoFooter .columna {
+  flex: 1;
+  padding: 20px;
+}
+
+#logo-infoFooter .logo-container {
+  background-color: #219EBC;
+  color: white;
+}
+
+#info-footer .info-logo {
+  background-color: #8ECAE6;
+  color: #333;
+}
+
+
 
 /* end footer section*/
 
